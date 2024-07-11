@@ -3,13 +3,32 @@ import { Button } from "../ui/button";
 import { Github, Instagram, Twitter, Youtube } from "lucide-react";
 
 const CURRENT_YEAR = new Date().getFullYear();
-const LINKS = ["Company", "About Us", "Team", "Products", "Blog"];
+const iconClass = "hover:scale-125 transition duration-200";
+
+const LINKS = [
+  {
+    icon: <Instagram className={iconClass} />,
+    href: "https://www.instagram.com/pmiceara/",
+  },
+  {
+    icon: <Twitter className={iconClass} />,
+    href: "",
+  },
+  {
+    icon: <Youtube className={iconClass} />,
+    href: "",
+  },
+  {
+    icon: <Github className={iconClass} />,
+    href: "",
+  },
+];
 
 export function Footer() {
   return (
     <footer id="footer" className="pb-5 p-10 md:pt-10">
-      <div className="container flex flex-col mx-auto">
-        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 text-slate-100 max-w-6xl mx-auto rounded-2xl p-5 ">
+      <div className="container flex flex-col mx-auto items-center">
+        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-slate-100 max-w-6xl mx-auto rounded-2xl p-5 ">
           <p
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
@@ -19,9 +38,10 @@ export function Footer() {
           <p color="white" className=" md:w-7/12 text-center my-3 !text-base">
             Não perca esta oferta exclusiva que terminará em breve.
           </p>
-          <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
+          <div className="flex w-fit gap-3 mt-2 flex-col md:flex-row">
             <Link
               target="_blank"
+              className="w-fit"
               href={
                 "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
               }
@@ -38,48 +58,46 @@ export function Footer() {
             {LINKS.map((link, index) => (
               <li key={index}>
                 <Link
-                  href="#"
-                  color="white"
+                  href={link.href}
                   className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
                 >
-                  {link}
+                  {link.icon}
                 </Link>
               </li>
             ))}
           </ul>
           {/* <div className="flex w-fit justify-center gap-2">
-            <Twitter />
-            <Youtube />
-            <Instagram />
-            <Github />
+
           </div> */}
         </div>
 
-        <p
-          color="blue-gray"
-          className="text-center text-sm mt-12 font-normal !text-gray-700"
-        >
-          &copy; {CURRENT_YEAR} Made with{" "}
-          <a href="https://nextjs.org/" target="_blank" className="font-bold">
-            Next{" "}
-          </a>
-          and{" "}
-          <a
-            href="https://ui.shadcn.com/"
-            target="_blank"
-            className="font-bold"
+        <div>
+          <p
+            color="blue-gray"
+            className="text-center text-sm mt-12 font-normal !text-gray-700"
           >
-            Shadcn{" "}
-          </a>
-          by{" "}
-          <a
-            href="https://fgomes.vercel.app/"
-            target="_blank"
-            className="font-bold"
-          >
-            Felipe Gomes
-          </a>
-        </p>
+            &copy; {CURRENT_YEAR} Made with{" "}
+            <a href="https://nextjs.org/" target="_blank" className="font-bold">
+              Next{" "}
+            </a>
+            and{" "}
+            <a
+              href="https://ui.shadcn.com/"
+              target="_blank"
+              className="font-bold"
+            >
+              Shadcn{" "}
+            </a>
+            by{" "}
+            <a
+              href="https://fgomes.vercel.app/"
+              target="_blank"
+              className="font-bold"
+            >
+              Felipe Gomes
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
