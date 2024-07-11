@@ -9,8 +9,8 @@ function Hero() {
       <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
       <div className="grid min-h-screen px-8">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-          <h3 className="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-white mb-2">
-            02-03 de Agosto @ Fortaleza
+          <h3 className="block antialiased tracking-normal font-sans text-3xl leading-snug text-white mb-2">
+            De 02 a 03 de agosto em Fortaleza
           </h3>
           <h1 className="block antialiased tracking-normal font-sans text-5xl font-semibold leading-tight text-white lg:max-w-3xl">
             IMPACTO INOVAÇÃO IA
@@ -19,13 +19,8 @@ function Hero() {
             14º Congresso Regional de Gestão, Projetos e Liderança - PMICE
           </p>
           <div className="flex items-center gap-4">
-            <Link
-              className="w-full h-full"
-              href={
-                "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
-              }
-            >
-              <Button color="white" className="w-40 h-12 text-base">
+            <Link className="w-full h-full" href="#footer">
+              <Button className="w-40 h-12 text-base" variant={"outline"}>
                 Ingressar
               </Button>
             </Link>
