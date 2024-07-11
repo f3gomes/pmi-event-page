@@ -79,7 +79,6 @@ export function Footer() {
           >
             Felipe Gomes
           </a>
-          .
         </p>
       </div>
     </footer>
