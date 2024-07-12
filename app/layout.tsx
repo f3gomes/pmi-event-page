@@ -1,9 +1,9 @@
 import type, { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Layout from "@/components/layout/layout";
 import "./globals.css";
 
-const roboto = Roboto({
+const font = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
   display: "swap",
@@ -30,7 +30,7 @@ export default function RootLayout({
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
-      <body className={roboto.className}>
+      <body className={font.className}>
         <Layout>{children}</Layout>
         <link
           rel="stylesheet"
