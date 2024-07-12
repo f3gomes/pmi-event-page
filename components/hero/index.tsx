@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@material-tailwind/react";
 import Link from "next/link";
 
 function Hero() {
@@ -26,9 +25,9 @@ function Hero() {
 
           <div className="flex items-center gap-4">
             <Link className="w-full h-full" href="#footer">
-              <Button className="w-40 h-12 text-base" variant={"gradient"}>
+              <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
                 Ingressar
-              </Button>
+              </button>
             </Link>
           </div>
         </div>
