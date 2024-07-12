@@ -95,6 +95,7 @@ export function Navbar() {
         >
           PMICE
         </Typography>
+
         {/* <div>
           <ul
             className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
@@ -111,7 +112,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <Button color={isScrolling ? "gray" : "white"} variant="text">
-            Log in
+            Entrar
           </Button>
         </div>
         <IconButton
@@ -140,7 +141,7 @@ export function Navbar() {
           </ul> */}
 
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text">Log in</Button>
+            <Button variant="text">Entrar</Button>
           </div>
         </div>
       </Collapse>
