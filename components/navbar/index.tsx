@@ -142,7 +142,7 @@ export function Navbar() {
           </ul>
 
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text">Entrar</Button>
+            <Button>Entrar</Button>
           </div>
         </div>
       </Collapse>

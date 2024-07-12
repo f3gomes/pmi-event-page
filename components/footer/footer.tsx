@@ -46,9 +46,7 @@ export function Footer() {
                 "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
               }
             >
-              <Button variant={"outline"} className="text-slate-900">
-                Comprar
-              </Button>
+              <Button className="text-slate-900">Comprar</Button>
             </Link>
           </div>
         </div>
@@ -66,9 +64,6 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          {/* <div className="flex w-fit justify-center gap-2">
-
-          </div> */}
         </div>
 
         <div>
