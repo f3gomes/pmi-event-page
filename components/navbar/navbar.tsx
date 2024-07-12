@@ -15,6 +15,8 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import Link from "next/link";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -23,7 +25,7 @@ interface NavItemProps {
 
 function NavItem({ children, href }: NavItemProps) {
   return (
-    <li>
+    <li className="hover:text-blue-gray-500 transition duration-200 hover:scale-105">
       <Typography
         as="a"
         href={href || "#"}
@@ -39,17 +41,14 @@ function NavItem({ children, href }: NavItemProps) {
 const NAV_MENU = [
   {
     name: "Início",
-    icon: RectangleStackIcon,
     href: "#hero",
   },
   {
     name: "Sobre",
-    icon: UserCircleIcon,
     href: "#about",
   },
   {
     name: "Programação",
-    icon: CommandLineIcon,
     href: "#event-content",
   },
 ];
@@ -90,21 +89,23 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          color={isScrolling ? "blue-gray" : "white"}
-          className="text-lg font-bold"
-        >
-          PMICE
-        </Typography>
+        <Link href={"https://pmice.org.br/"} target="_blank">
+          <Image
+            width={200}
+            height={75}
+            src={"/logo/logo.png"}
+            alt="testimonial image"
+            className="cursor-pointer"
+          />
+        </Link>
 
         <div>
           <ul
             className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
               }`}
           >
-            {NAV_MENU.map(({ name, icon: Icon, href }) => (
+            {NAV_MENU.map(({ name, href }) => (
               <NavItem key={name} href={href}>
-                <Icon className="h-5 w-5" />
                 <span>{name}</span>
               </NavItem>
             ))}
@@ -133,9 +134,8 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
-            {NAV_MENU.map(({ name, icon: Icon, href }) => (
+            {NAV_MENU.map(({ name, href }) => (
               <NavItem key={name} href={href}>
-                <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
             ))}

@@ -27,7 +27,7 @@ export function EventContentCard({
     <Card
       color="transparent"
       shadow={false}
-      className="lg:!flex-row mb-10 lg:items-end"
+      className="relative lg:!flex-row mb-10 min-h-[32rem]"
     >
       <CardHeader
         floated={false}
@@ -44,7 +44,7 @@ export function EventContentCard({
       </CardHeader>
 
       <CardBody className="col-span-full lg:col-span-3">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 md:w-11/12">
           <div>
             <Typography variant="h6" color="blue-gray" className="mb-0.5">
               {name}
@@ -61,11 +61,11 @@ export function EventContentCard({
         <Typography
           variant="h3"
           color="blue-gray"
-          className="mb-4 font-medium w-[32rem] "
+          className="mb-4 font-medium w-[32rem] md:w-11/12"
         >
           {title}
         </Typography>
-        <Typography className="mb-12 md:w-8/12 font-medium !text-gray-500 text-justify">
+        <Typography className="mb-12 md:w-11/12 font-medium !text-gray-500 text-justify">
           {des}
         </Typography>
       </CardBody>
