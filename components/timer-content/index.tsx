@@ -4,7 +4,7 @@ import Timer from "../timer";
 function TimerContent() {
   return (
     <div
-      id="timer"
+      id="where"
       className="flex items-center justify-center gap-4 flex-col h-96 -mb-10 bg-event-300/60"
     >
       <div>

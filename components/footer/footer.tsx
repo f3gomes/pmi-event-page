@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { Github, Instagram, Twitter, Youtube } from "lucide-react";
 
 const CURRENT_YEAR = new Date().getFullYear();
@@ -46,7 +45,9 @@ export function Footer() {
                 "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
               }
             >
-              <Button className="text-slate-900">Comprar</Button>
+              <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+                Comprar
+              </button>
             </Link>
           </div>
         </div>

@@ -51,6 +51,10 @@ const NAV_MENU = [
     name: "Programação",
     href: "#event-content",
   },
+  {
+    name: "Datas",
+    href: "#where",
+  },
 ];
 
 export function Navbar() {
