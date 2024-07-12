@@ -1,7 +1,7 @@
 "use client";
 
 import { Typography } from "@material-tailwind/react";
-import AboutCard from "../about-card/about-card";
+import AboutCard from "../about-card";
 
 const EVENT_INFO = [
   {

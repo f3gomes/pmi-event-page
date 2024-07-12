@@ -1,10 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import Timer from "../timer/timer";
+import Timer from "../timer";
 
-const CURRENT_YEAR = new Date().getFullYear();
-
-export function TimerContent() {
+function TimerContent() {
   return (
     <div
       id="timer"

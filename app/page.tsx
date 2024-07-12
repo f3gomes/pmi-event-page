@@ -1,9 +1,9 @@
-import AboutEvent from "@/components/about/about";
-import EventContent from "@/components/event-content/event-contet";
-import Footer from "@/components/footer/footer";
-import Hero from "@/components/hero/hero";
-import Navbar from "@/components/navbar/navbar";
-import { TimerContent } from "@/components/timer-content/timer-content";
+import AboutEvent from "@/components/about";
+import EventContent from "@/components/event-content";
+import Footer from "@/components/footer";
+import Hero from "@/components/hero";
+import Navbar from "@/components/navbar";
+import TimerContent from "@/components/timer-content";
 
 export default function Home() {
   return (

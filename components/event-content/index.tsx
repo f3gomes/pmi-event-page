@@ -1,7 +1,7 @@
 "use client";
 
 import { Tabs } from "@material-tailwind/react";
-import EventContentCard from "../event-contet-card/event-content-card";
+import EventContentCard from "../event-contet-card";
 
 const EVENT_CONTENT = [
   {
