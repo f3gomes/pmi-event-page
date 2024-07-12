@@ -29,10 +29,10 @@ const LINKS = [
 
 export function Footer() {
   return (
-    <footer id="footer" className="pb-5 md:pt-10">
+    <footer id="footer" className="pb-5 pt-10">
       <div className="flex w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
         <p
-          className="text-2xl md:text-3xl text-center font-bold "
+          className="text-2xl md:text-3xl text-center font-bold"
           color="white"
         >
           Garanta seu ingresso e junte-se a nós!
