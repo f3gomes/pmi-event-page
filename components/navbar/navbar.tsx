@@ -27,7 +27,6 @@ function NavItem({ children, href }: NavItemProps) {
       <Typography
         as="a"
         href={href || "#"}
-        target={href ? "_blank" : "_self"}
         variant="paragraph"
         className="flex items-center gap-2 font-medium"
       >
@@ -39,17 +38,19 @@ function NavItem({ children, href }: NavItemProps) {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Início",
     icon: RectangleStackIcon,
+    href: "#hero",
   },
   {
-    name: "Account",
+    name: "Sobre",
     icon: UserCircleIcon,
+    href: "#about",
   },
   {
-    name: "Docs",
+    name: "Programação",
     icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    href: "#event-content",
   },
 ];
 
@@ -96,7 +97,7 @@ export function Navbar() {
           PMICE
         </Typography>
 
-        {/* <div>
+        <div>
           <ul
             className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
               }`}
@@ -108,7 +109,7 @@ export function Navbar() {
               </NavItem>
             ))}
           </ul>
-        </div> */}
+        </div>
 
         <div className="hidden items-center gap-4 lg:flex">
           <Button color={isScrolling ? "gray" : "white"} variant="text">
@@ -131,14 +132,14 @@ export function Navbar() {
 
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
-          {/* <ul className="flex flex-col gap-4 text-gray-900">
+          <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
                 <Icon className="h-5 w-5" />
                 {name}
               </NavItem>
             ))}
-          </ul> */}
+          </ul>
 
           <div className="mt-6 flex items-center gap-4">
             <Button variant="text">Entrar</Button>

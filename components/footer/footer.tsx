@@ -29,33 +29,34 @@ const LINKS = [
 
 export function Footer() {
   return (
-    <footer id="footer" className="pb-5 p-10 md:pt-10">
-      <div className="container flex flex-col mx-auto items-center text-white">
-        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-slate-100 max-w-6xl mx-auto rounded-2xl p-5 ">
-          <p
-            className="text-2xl md:text-3xl text-center font-bold "
-            color="white"
-          >
-            Garanta seu ingresso e junte-se a nós!
-          </p>
-          <p color="white" className=" md:w-7/12 text-center my-3 !text-base">
-            Não perca esta oferta exclusiva que terminará em breve.
-          </p>
-          <div className="flex w-fit gap-3 mt-2 flex-col md:flex-row">
-            <Link
-              target="_blank"
-              className="w-fit"
-              href={
-                "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
-              }
-            >
-              <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
-                Comprar
-              </button>
-            </Link>
-          </div>
-        </div>
+    <footer id="footer" className="pb-5 md:pt-10">
+      <div className="flex w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
+        <p
+          className="text-2xl md:text-3xl text-center font-bold "
+          color="white"
+        >
+          Garanta seu ingresso e junte-se a nós!
+        </p>
+        <p color="white" className=" md:w-7/12 text-center my-3 !text-base">
+          Não perca esta oferta exclusiva que terminará em breve.
+        </p>
 
+        <div className="flex w-fit gap-3 mt-2 flex-col md:flex-row">
+          <Link
+            target="_blank"
+            className="w-fit"
+            href={
+              "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
+            }
+          >
+            <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+              Comprar
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col items-center text-white">
         <div className="flex flex-col md:flex-row items-center !justify-between">
           <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (

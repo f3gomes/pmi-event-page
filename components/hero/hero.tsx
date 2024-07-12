@@ -5,7 +5,10 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-r from-event-100 via-event-200 to-event-400 bg-cover bg-no-repeat">
+    <div
+      id="hero"
+      className="min-h-screen w-full bg-gradient-to-r from-event-100 via-event-200 to-event-400 bg-cover bg-no-repeat"
+    >
       <div className="absolute inset-0 h-full w-full" />
       <div className="grid min-h-screen px-8">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">

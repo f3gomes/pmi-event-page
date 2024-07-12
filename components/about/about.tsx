@@ -20,17 +20,20 @@ const EVENT_INFO = [
 
 export function AboutEvent() {
   return (
-    <section className="container mx-auto flex flex-col items-center px-4 py-10">
-      <Typography variant="h6" className="text-center mb-2" color="orange">
-        Descrição do evento
+    <section
+      id="about"
+      className="container mx-auto flex flex-col items-center px-4 py-10"
+    >
+      <Typography variant="h4" className="text-center mb-8" color="orange">
+        Sobre do evento
       </Typography>
       <Typography variant="h4" className="text-center" color="blue-gray">
-        14º Congresso Regional de Gestão, Projetos e Liderança Sexta-feira,
-        02/08/2024 • 12:00 - <br /> Sábado, 03/08/2024 • 18:00
+        14º Congresso Regional de Gestão, Projetos e Liderança <br />{" "}
+        Sexta-feira, 02/08/2024 • 12:00 <br /> Sábado, 03/08/2024 • 18:00
       </Typography>
       <Typography
         variant="lead"
-        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
+        className="mt-4 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
         Bem-vindo ao Congresso Regional de Gestão, Projetos e Liderança (CRGPL),
         o ponto de encontro para líderes e gestores de projetos no Estado do
@@ -44,7 +47,7 @@ export function AboutEvent() {
 
       <Typography
         variant="lead"
-        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
+        className="mt-4 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
         O Project Management Institute (PMI) é uma associação profissional líder
         mundial para uma comunidade global crescente de milhões de profissionais
