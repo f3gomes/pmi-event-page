@@ -18,7 +18,7 @@ function TimerContent() {
       </div>
 
       <div className="text-2xl md:text-3xl text-center font-bold">
-        02 E 03 DE JULHO | 2024
+        02 E 03 DE AGOSTO | 2024
       </div>
 
       <div className="font-bold text-white">
