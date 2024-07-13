@@ -16,6 +16,9 @@ const config: Config = withMT({
           400: "#4B2292",
         },
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [],

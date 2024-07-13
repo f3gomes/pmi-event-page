@@ -61,7 +61,7 @@ export function EventContentCard({
         <Typography
           variant="h3"
           color="blue-gray"
-          className="mb-4 font-medium w-[32rem] md:w-11/12"
+          className="mb-4 font-medium w-[32rem] md:w-11/12 xs:w-11/12"
         >
           {title}
         </Typography>

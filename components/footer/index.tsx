@@ -14,16 +14,8 @@ const LINKS = [
     href: "https://www.instagram.com/pmiceara/",
   },
   {
-    icon: <Twitter className={iconClass} />,
-    href: "https://twitter.com/pmiceara",
-  },
-  {
     icon: <Youtube className={iconClass} />,
     href: "https://www.youtube.com/channel/UCQ3OoimV8zxsGgm1vH0Sfpw",
-  },
-  {
-    icon: <Facebook className={iconClass} />,
-    href: "https://www.facebook.com/pmiceara",
   },
 ];
 
@@ -31,10 +23,7 @@ export function Footer() {
   return (
     <footer id="footer" className="pb-5 pt-10">
       <div className="flex w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
-        <p
-          className="text-2xl md:text-3xl text-center font-bold"
-          color="white"
-        >
+        <p className="text-2xl md:text-3xl text-center font-bold" color="white">
           Garanta seu ingresso e junte-se a nós!
         </p>
         <p color="white" className=" md:w-7/12 text-center my-3 !text-base">
