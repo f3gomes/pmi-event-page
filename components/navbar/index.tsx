@@ -21,11 +21,18 @@ import Link from "next/link";
 interface NavItemProps {
   children: React.ReactNode;
   href?: string;
+  open?: boolean;
+  setOpen?: any;
 }
 
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children, href, open, setOpen }: NavItemProps) {
   return (
-    <li className="hover:text-blue-gray-500 transition duration-200 hover:scale-105">
+    <li
+      className="hover:text-blue-gray-500 transition duration-200 hover:scale-105"
+      onClick={() => {
+        open && setOpen(false);
+      }}
+    >
       <Typography
         as="a"
         href={href || "#"}
@@ -139,7 +146,7 @@ export function Navbar() {
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, href }) => (
-              <NavItem key={name} href={href}>
+              <NavItem key={name} href={href} open={open} setOpen={setOpen}>
                 {name}
               </NavItem>
             ))}
