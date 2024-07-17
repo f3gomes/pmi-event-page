@@ -10,7 +10,7 @@ const EVENT_CONTENT = [
     name: "Luiz Henrique",
     position: "Sales Practice Lead de Data, Analytics & AI no Google",
     panel: "Tema",
-    img: "/image/luiz-henrique.jpeg",
+    img: "/img/luiz-henrique.jpeg",
   },
   {
     title:
@@ -19,7 +19,7 @@ const EVENT_CONTENT = [
     name: "Robson Santos",
     position: "Gerente de Experiência do Usuário no Magalu",
     panel: "Tema",
-    img: "/image/robson.jpeg",
+    img: "/img/robson.jpeg",
   },
   {
     title: "Projetos com dados e IA Generativa, por onde começar?",
@@ -28,7 +28,7 @@ const EVENT_CONTENT = [
     position:
       "Arquiteta de Soluções, Especialsta em Dados & AI na Amazon Web Services (AWS)",
     panel: "Tema",
-    img: "/image/erika.jpeg",
+    img: "/img/erika.jpeg",
   },
 ];
 
