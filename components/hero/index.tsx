@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="min-h-screen w-full bg-[url('/img/bg-image.png')] bg-cover bg-no-repeat"
+      className="min-h-screen w-full bg-[url('/img/page/bg-image.png')] bg-cover bg-no-repeat"
     >
       <div className="absolute inset-0 h-full w-full" />
       <div className="grid min-h-screen px-8">

@@ -4,69 +4,54 @@ import {
   Card,
   CardHeader,
   CardBody,
-  Avatar,
 } from "@material-tailwind/react";
 
 interface EventContentCardProps {
-  title: string;
-  des: string;
+  img: string;
   name: string;
   position: string;
-  panel: string;
-  img: string;
+  title: string;
 }
 export function EventContentCard({
   title,
-  des,
   name,
   position,
-  panel,
   img,
 }: EventContentCardProps) {
   return (
     <Card
       color="transparent"
       shadow={false}
-      className="relative lg:!flex-row mb-10 min-h-[32rem]"
+      className="mb-10 h-[24rem] w-[18rem] bg-[#47bfe0]/90 cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
     >
       <CardHeader
         floated={false}
         shadow={false}
-        className="h-[30rem] max-w-[28rem] shrink-0"
+        className="h-[30rem] w-full mt-0 ml-0 rounded-b-none"
       >
         <Image
           width={768}
           height={768}
           src={img}
           alt="testimonial image"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover hover:scale-105 transition duration-300"
         />
       </CardHeader>
 
-      <CardBody className="col-span-full lg:col-span-3">
-        <div className="flex items-center gap-4 md:w-11/12">
+      <CardBody className="flex flex-col -mt-5">
+        <div className="flex items-center gap-4">
           <div>
-            <Typography variant="h6" color="blue-gray" className="mb-0.5">
+            <Typography variant="h6" color="blue-gray">
               {name}
             </Typography>
-            <Typography variant="small" className="font-normal !text-gray-500">
+            <Typography variant="small" className="font-normal !text-gray-900">
               {position}
             </Typography>
           </div>
         </div>
 
-        <Typography variant="h6" color="blue-gray" className="mb-4 invisible">
-          {panel}
-        </Typography>
-        <Typography
-          variant="h3"
-          color="blue-gray"
-          className="mb-4 font-medium w-[32rem] md:w-11/12 xs:w-11/12"
-        >
+        <Typography variant="h6" className="font-bold text-event-200">
           {title}
-        </Typography>
-        <Typography className="mb-12 md:w-11/12 font-medium !text-gray-500 text-justify">
-          {des}
         </Typography>
       </CardBody>
     </Card>
