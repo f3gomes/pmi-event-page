@@ -31,6 +31,7 @@ function Timer() {
     const intervalo = setInterval(atualizarContagemRegressiva, 1000);
 
     return () => clearInterval(intervalo);
+    // eslint-disable-next-line
   }, []);
 
   return (
