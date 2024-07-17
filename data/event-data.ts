@@ -1,5 +1,6 @@
 export const EVENT_CONTENT = [
   {
+    id: 1,
     title: "Speaker",
     topic: "Inteligência Artificial - Perspectiva, Oportunidades e Futuro",
     des: "Lidera o desenvolvimento de negócios em Analytcs, Data Science, Machine Learning, e afins. Possui mais de 18 anos de experiẽncia em empresas multinacionais de tecnologia, apoiando várias áreas de negócio, novos produtos e serviços e desenvolvimento de pessoas. Formado em Administração de Empresas. Tem participado ainda em inúmeros cursos de pós-graduação em renomadas instituições tais como Duke University, Comlumbia University, London Business School e University of Michigan",
@@ -8,6 +9,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/luiz-henrique.jpeg",
   },
   {
+    id: 2,
     title: "Speaker",
     topic:
       "Criando o cérebro da Lu: Oportunidades e desafios da inteligência artificial para o varejo",
@@ -17,6 +19,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/robson.jpeg",
   },
   {
+    id: 3,
     title: "Speaker",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -25,6 +28,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/erika.jpeg",
   },
   {
+    id: 4,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -33,6 +37,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/fabio.jpeg",
   },
   {
+    id: 5,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -41,6 +46,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/marcia.jpeg",
   },
   {
+    id: 6,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -49,6 +55,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/joaop.jpeg",
   },
   {
+    id: 7,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -57,6 +64,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/robes.jpeg",
   },
   {
+    id: 8,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -65,6 +73,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/rafael.jpeg",
   },
   {
+    id: 9,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -73,6 +82,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/filipe.jpeg",
   },
   {
+    id: 10,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -81,6 +91,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/silvia.jpeg",
   },
   {
+    id: 11,
     title: "Workshop",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -89,6 +100,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/davi.jpeg",
   },
   {
+    id: 12,
     title: "Workshop / Mesa Redonda",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -97,6 +109,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/leo.jpeg",
   },
   {
+    id: 13,
     title: "Mesa Redonda",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -105,6 +118,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/denise.jpeg",
   },
   {
+    id: 14,
     title: "Mesa Redonda",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
@@ -113,6 +127,7 @@ export const EVENT_CONTENT = [
     img: "/img/speakers/joao.jpeg",
   },
   {
+    id: 15,
     title: "Mesa Redonda",
     topic: "Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",

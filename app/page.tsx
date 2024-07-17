@@ -1,10 +1,10 @@
-import AboutEvent from "@/components/about";
-import EventContent from "@/components/event-content";
-import Footer from "@/components/footer";
-import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
-import TimerContent from "@/components/timer-content";
 import { Suspense } from "react";
+import Hero from "@/components/hero";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import AboutEvent from "@/components/about";
+import TimerContent from "@/components/timer-content";
+import SpeakerSection from "@/components/speaker-section";
 import Loading from "./loading";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
       </Suspense>
       <AboutEvent />
-      <EventContent />
+      <SpeakerSection />
       <TimerContent />
       <Footer />
     </>

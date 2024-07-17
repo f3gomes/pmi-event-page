@@ -1,9 +1,9 @@
 "use client";
 
-import EventContentCard from "../event-contet-card";
 import { EVENT_CONTENT } from "@/data/event-data";
+import SpeakerCard from "../speaker-card";
 
-export function EventContent() {
+const SpeakerSection = () => {
   return (
     <section
       id="event-content"
@@ -11,11 +11,11 @@ export function EventContent() {
     >
       <div className="mx-auto flex justify-center flex-wrap gap-6">
         {EVENT_CONTENT.map((props, idx) => (
-          <EventContentCard key={idx} {...props} />
+          <SpeakerCard key={idx} {...props} />
         ))}
       </div>
     </section>
   );
-}
+};
 
-export default EventContent;
+export default SpeakerSection;

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 
-function Timer() {
+const Timer = () => {
   const [dias, setDias] = useState(0);
   const [horas, setHoras] = useState(0);
   const [minutos, setMinutos] = useState(0);
@@ -53,6 +53,6 @@ function Timer() {
       </div>
     </div>
   );
-}
+};
 
 export default Timer;

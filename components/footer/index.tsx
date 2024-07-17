@@ -19,7 +19,7 @@ const LINKS = [
   },
 ];
 
-export function Footer() {
+const Footer = () => {
   return (
     <footer id="footer" className="pb-5 pt-10">
       <div className="flex w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
@@ -91,6 +91,6 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

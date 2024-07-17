@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Timer from "../timer";
 
-function TimerContent() {
+const TimerContent = () => {
   return (
     <div
       id="where"
@@ -26,6 +26,6 @@ function TimerContent() {
       </div>
     </div>
   );
-}
+};
 
 export default TimerContent;

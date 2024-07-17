@@ -6,18 +6,13 @@ import {
   CardBody,
 } from "@material-tailwind/react";
 
-interface EventContentCardProps {
+interface SpeakerCardProps {
   img: string;
   name: string;
   position: string;
   title: string;
 }
-export function EventContentCard({
-  title,
-  name,
-  position,
-  img,
-}: EventContentCardProps) {
+const SpeakerCard = ({ title, name, position, img }: SpeakerCardProps) => {
   return (
     <Card
       color="transparent"
@@ -38,7 +33,7 @@ export function EventContentCard({
         />
       </CardHeader>
 
-      <CardBody className="flex flex-col -mt-5">
+      <CardBody className="flex flex-col -mt-5 -ml-3">
         <div className="flex items-center gap-4">
           <div>
             <Typography variant="h6" color="blue-gray">
@@ -56,6 +51,6 @@ export function EventContentCard({
       </CardBody>
     </Card>
   );
-}
+};
 
-export default EventContentCard;
+export default SpeakerCard;

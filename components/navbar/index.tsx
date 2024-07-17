@@ -64,7 +64,7 @@ const NAV_MENU = [
   },
 ];
 
-export function Navbar() {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -159,6 +159,6 @@ export function Navbar() {
       </Collapse>
     </MTNavbar>
   );
-}
+};
 
 export default Navbar;
