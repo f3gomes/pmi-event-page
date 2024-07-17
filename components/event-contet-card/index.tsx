@@ -22,7 +22,7 @@ export function EventContentCard({
     <Card
       color="transparent"
       shadow={false}
-      className="mb-10 h-[24rem] w-[18rem] bg-[#47bfe0] cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
+      className="mb-10 h-[24rem] w-[18rem] bg-[#47bfe0]/90 cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
     >
       <CardHeader
         floated={false}
