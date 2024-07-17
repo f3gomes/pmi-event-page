@@ -22,7 +22,7 @@ export function EventContentCard({
     <Card
       color="transparent"
       shadow={false}
-      className="mb-10 h-[36rem] w-[27rem] bg-event-300/20 cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
+      className="mb-10 h-[24rem] w-[18rem] bg-[#47bfe0] cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
     >
       <CardHeader
         floated={false}
@@ -41,20 +41,16 @@ export function EventContentCard({
       <CardBody className="flex flex-col -mt-5">
         <div className="flex items-center gap-4">
           <div>
-            <Typography variant="h6" color="blue-gray" className="">
+            <Typography variant="h6" color="blue-gray">
               {name}
             </Typography>
-            <Typography variant="small" className="font-normal !text-gray-600">
+            <Typography variant="small" className="font-normal !text-gray-900">
               {position}
             </Typography>
           </div>
         </div>
 
-        <Typography
-          variant="h6"
-          color="blue-gray"
-          className="font-medium absolute bottom-2"
-        >
+        <Typography variant="h6" className="font-bold text-event-200">
           {title}
         </Typography>
       </CardBody>
