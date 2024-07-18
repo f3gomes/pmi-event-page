@@ -19,7 +19,7 @@ const Hero = () => {
             IMPACTO INOVAÇÃO IA
           </h1>
 
-          <p className="block antialiased font-sans xs:text-3xl sm:text-3xl  font-normal leading-relaxed text-white mt-1 mb-12 w-full md:max-w-full">
+          <p className="block antialiased font-sans xs:text-3xl sm:text-3xl  font-normal leading-relaxed text-white mb-12 w-full md:max-w-full">
             14º Congresso Regional de Gestão, Projetos e Liderança - PMICE
           </p>
 

@@ -14,7 +14,7 @@ const TimerContent = () => {
           sizes="100vw"
           alt="logo"
           src={"/logo/logo-large.png"}
-          className="-mt-6 w-[30rem] h-auto"
+          className="w-[30rem] h-auto"
         />
       </div>
 

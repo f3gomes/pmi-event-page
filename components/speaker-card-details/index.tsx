@@ -27,14 +27,14 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
 
   if (!speaker) {
     return (
-      <div className="w-full mt-20 flex justify-center">
+      <div className="w-full flex justify-center">
         <Spinner />
       </div>
     );
   }
 
   return (
-    <div className="flex justify-center items-center flex-col md:flex-row gap-4 mt-20 md:mt-0 px-1 py-6">
+    <div className="flex justify-center py-28 md:h-screen bg-gradient-to-b from-event-300 via-event-200 to-event-400 items-center flex-col md:flex-row gap-4 px-1">
       <div className="w-96 flex flex-col items-center gap-4">
         <Image
           width={768}

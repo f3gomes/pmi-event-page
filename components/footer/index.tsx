@@ -30,7 +30,7 @@ const Footer = () => {
           Não perca esta oferta exclusiva que terminará em breve.
         </p>
 
-        <div className="flex w-fit gap-3 mt-2 flex-col md:flex-row">
+        <div className="flex w-fit gap-3 flex-col md:flex-row">
           <Link
             target="_blank"
             className="w-fit"
@@ -65,7 +65,7 @@ const Footer = () => {
         <div>
           <p
             color="blue-gray"
-            className="text-center text-xs mt-12 font-normal !text-gray-700"
+            className="text-center text-xs font-normal !text-gray-700"
           >
             &copy; {CURRENT_YEAR} Made with{" "}
             <a href="https://nextjs.org/" target="_blank" className="font-bold">
