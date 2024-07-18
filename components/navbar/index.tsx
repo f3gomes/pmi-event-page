@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
-  Button,
   IconButton,
   Typography,
 } from "@material-tailwind/react";
@@ -17,6 +16,10 @@ interface NavItemProps {
   href?: string;
   open?: boolean;
   setOpen?: any;
+}
+
+interface NavbarProps {
+  home: boolean;
 }
 
 function NavItem({ children, href, open, setOpen }: NavItemProps) {
@@ -49,7 +52,7 @@ const NAV_MENU = [
     href: "#about",
   },
   {
-    name: "Programação",
+    name: "Speakers",
     href: "#speakers",
   },
   {
@@ -58,7 +61,7 @@ const NAV_MENU = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ home }: NavbarProps) => {
   const [open, setOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -108,7 +111,7 @@ const Navbar = () => {
 
         <div className="">
           <ul
-            className={` hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
+            className={` hidden items-center gap-6 lg:flex ${isScrolling || !home ? "text-gray-900" : "text-white"
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (

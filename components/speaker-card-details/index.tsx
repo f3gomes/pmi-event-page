@@ -34,7 +34,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
   }
 
   return (
-    <div className="flex justify-center py-28 md:h-screen bg-gradient-to-b from-event-300 via-event-200 to-event-400 items-center flex-col md:flex-row gap-4 px-1">
+    <div className="flex justify-center py-28 md:h-screen items-center flex-col md:flex-row gap-4 px-1">
       <div className="w-96 flex flex-col items-center gap-4">
         <Image
           width={768}
