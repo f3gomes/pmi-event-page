@@ -55,7 +55,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
         <div className="flex justify-between">
           <h3 className="uppercase text-sm">{speaker?.title}</h3>
 
-          <Link href={"https://www.linkedin.com/in/"} target="_blank">
+          <Link href={speaker?.linkedin} target="_blank">
             <Button variant="gradient">
               <LinkedinIcon size={22} />
             </Button>
