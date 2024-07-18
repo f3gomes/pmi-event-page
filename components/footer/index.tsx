@@ -21,8 +21,8 @@ const LINKS = [
 
 const Footer = () => {
   return (
-    <footer id="footer" className="pb-5 pt-10">
-      <div className="flex w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
+    <footer id="footer">
+      <div className="flex w-full py-10 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
         <p className="text-2xl md:text-3xl text-center font-bold" color="white">
           Garanta seu ingresso e junte-se a nós!
         </p>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center text-white">
+      <div className="w-full flex flex-col py-4 gap-4 items-center text-white">
         <div className="flex flex-col md:flex-row items-center !justify-between">
           <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (
