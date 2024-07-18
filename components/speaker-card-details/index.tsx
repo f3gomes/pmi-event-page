@@ -45,7 +45,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
         />
 
         <Link href={"/#speakers"} className="w-full">
-          <Button className="w-full h-12 bg-event-100 transition duration-200 hover:bg-event-100/90">
+          <Button className="w-full h-12 bg-orange-700 transition duration-200 hover:bg-orange-800">
             Todos os speakers
           </Button>
         </Link>
