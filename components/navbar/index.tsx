@@ -91,9 +91,9 @@ const Navbar = () => {
       fullWidth
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0 h-28 flex justify-center"
+      className="fixed top-0 z-50 border-0 h-28"
     >
-      <div className="container mx-auto h-full flex items-center justify-center absolute top-0">
+      <div className="container mx-auto h-full flex items-center justify-center">
         <Link href={"/"} className="absolute top-0 left-0">
           <Image
             priority
