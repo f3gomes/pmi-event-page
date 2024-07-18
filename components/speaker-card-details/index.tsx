@@ -34,7 +34,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
   }
 
   return (
-    <div className="flex justify-center items-center flex-col md:flex-row gap-4 mt-20 px-1 py-6">
+    <div className="flex justify-center items-center flex-col md:flex-row gap-4 mt-20 md:mt-0 px-1 py-6">
       <div className="w-96 flex flex-col items-center gap-4">
         <Image
           width={768}
@@ -51,7 +51,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
         </Link>
       </div>
 
-      <div className="flex relative flex-col rounded-xl gap-3 md:gap-6 max-w-[45.625rem] md:h-[30rem] p-8 bg-blue-gray-50">
+      <div className="flex relative flex-col rounded-xl gap-3 md:gap-6 max-w-[45.625rem] md:h-[28rem] p-8 bg-blue-gray-50">
         <div className="flex justify-between">
           <h3 className="uppercase text-sm">{speaker?.title}</h3>
 
@@ -66,7 +66,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
 
         <h1 className="font-medium text-blue-gray-700">{speaker?.position}</h1>
 
-        <div className="text-justify mb-12 md:mb-0">{speaker?.des}</div>
+        <div className="text-justify mb-16 md:mb-0">{speaker?.des}</div>
 
         <div className="font-medium absolute bottom-5 mr-8">
           {speaker?.topic}
