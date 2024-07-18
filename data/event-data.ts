@@ -79,7 +79,7 @@ export const EVENT_CONTENT = [
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
     name: "Alex Amarante",
     position: "Formação Plena",
-    img: "/img/speakers/filipe.jpeg",
+    img: "/img/speakers/alex.jpeg",
   },
   {
     id: 10,
