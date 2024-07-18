@@ -56,7 +56,7 @@ const NAV_MENU = [
   },
   {
     name: "Programação",
-    href: "#event-content",
+    href: "#speakers",
   },
   {
     name: "Datas",
@@ -64,7 +64,7 @@ const NAV_MENU = [
   },
 ];
 
-export function Navbar() {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -97,11 +97,12 @@ export function Navbar() {
       fullWidth
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+      className="fixed top-0 z-50 border-0 h-28"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Link href={"https://pmice.org.br/"} target="_blank">
+        <Link href={"/"}>
           <Image
+            priority
             width={200}
             height={75}
             src={"/logo/logo.png"}
@@ -110,9 +111,9 @@ export function Navbar() {
           />
         </Link>
 
-        <div>
+        <div className="-ml-24">
           <ul
-            className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
+            className={` hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (
@@ -124,7 +125,11 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <Button color={isScrolling ? "gray" : "white"} variant="text">
+          <Button
+            variant="text"
+            className="invisible"
+            color={isScrolling ? "gray" : "white"}
+          >
             Entrar
           </Button>
         </div>
@@ -151,14 +156,10 @@ export function Navbar() {
               </NavItem>
             ))}
           </ul>
-
-          <div className="mt-6 flex items-center gap-4">
-            <Button>Entrar</Button>
-          </div>
         </div>
       </Collapse>
     </MTNavbar>
   );
-}
+};
 
 export default Navbar;

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-function Hero() {
+const Hero = () => {
   return (
     <div
       id="hero"
@@ -34,6 +34,6 @@ function Hero() {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

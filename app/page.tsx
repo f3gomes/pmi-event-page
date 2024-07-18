@@ -1,17 +1,21 @@
-import AboutEvent from "@/components/about";
-import EventContent from "@/components/event-content";
-import Footer from "@/components/footer";
+import { Suspense } from "react";
 import Hero from "@/components/hero";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import AboutEvent from "@/components/about";
 import TimerContent from "@/components/timer-content";
+import SpeakerSection from "@/components/speaker-section";
+import Loading from "./loading";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <Suspense fallback={<Loading />}>
+        <Navbar />
+        <Hero />
+      </Suspense>
       <AboutEvent />
-      <EventContent />
+      <SpeakerSection />
       <TimerContent />
       <Footer />
     </>

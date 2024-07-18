@@ -18,7 +18,7 @@ const EVENT_INFO = [
   },
 ];
 
-export function AboutEvent() {
+const AboutEvent = () => {
   return (
     <section
       id="about"
@@ -73,6 +73,6 @@ export function AboutEvent() {
       </div> */}
     </section>
   );
-}
+};
 
 export default AboutEvent;
