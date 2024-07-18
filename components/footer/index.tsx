@@ -21,8 +21,8 @@ const LINKS = [
 
 const Footer = () => {
   return (
-    <footer id="footer" className="pb-5 pt-10">
-      <div className="flex w-full py-10 mb-5 md:mb-20 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
+    <footer id="footer">
+      <div className="flex w-full py-10 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
         <p className="text-2xl md:text-3xl text-center font-bold" color="white">
           Garanta seu ingresso e junte-se a nós!
         </p>
@@ -30,7 +30,7 @@ const Footer = () => {
           Não perca esta oferta exclusiva que terminará em breve.
         </p>
 
-        <div className="flex w-fit gap-3 mt-2 flex-col md:flex-row">
+        <div className="flex w-fit gap-3 flex-col md:flex-row">
           <Link
             target="_blank"
             className="w-fit"
@@ -45,13 +45,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center text-white">
+      <div className="w-full flex flex-col py-4 gap-4 items-center text-white">
         <div className="flex flex-col md:flex-row items-center !justify-between">
           <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (
               <li key={index}>
                 <Link
                   href={link.href}
+                  target="_blank"
                   className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
                 >
                   {link.icon}
@@ -64,7 +65,7 @@ const Footer = () => {
         <div>
           <p
             color="blue-gray"
-            className="text-center text-xs mt-12 font-normal !text-gray-700"
+            className="text-center text-xs font-normal !text-gray-700"
           >
             &copy; {CURRENT_YEAR} Made with{" "}
             <a href="https://nextjs.org/" target="_blank" className="font-bold">

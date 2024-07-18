@@ -27,14 +27,14 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
 
   if (!speaker) {
     return (
-      <div className="w-full mt-20 flex justify-center">
+      <div className="w-full flex justify-center">
         <Spinner />
       </div>
     );
   }
 
   return (
-    <div className="flex gap-4 mt-20">
+    <div className="flex justify-center py-28 md:h-screen items-center flex-col md:flex-row gap-4 px-1">
       <div className="w-96 flex flex-col items-center gap-4">
         <Image
           width={768}
@@ -45,30 +45,32 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
         />
 
         <Link href={"/#speakers"} className="w-full">
-          <Button className="w-full h-12 bg-event-100 transition duration-200 hover:bg-event-100/90">
+          <Button className="w-full h-12 bg-orange-700 transition duration-200 hover:bg-orange-800">
             Todos os speakers
           </Button>
         </Link>
       </div>
 
-      <div className="flex flex-col rounded-xl gap-6 w-[45.625rem] h-[28rem] p-8 bg-blue-gray-50">
+      <div className="flex relative flex-col rounded-xl gap-3 md:gap-6 max-w-[45.625rem] md:h-[28rem] p-8 bg-blue-gray-50">
         <div className="flex justify-between">
           <h3 className="uppercase text-sm">{speaker?.title}</h3>
 
-          <Link href={"https://www.linkedin.com/in/"} target="_blank">
+          <Link href={speaker?.linkedin} target="_blank">
             <Button variant="gradient">
               <LinkedinIcon size={22} />
             </Button>
           </Link>
         </div>
 
-        <h1 className="font-bold text-5xl">{speaker?.name}</h1>
+        <h1 className="font-bold text-3xl md:text-5xl">{speaker?.name}</h1>
 
         <h1 className="font-medium text-blue-gray-700">{speaker?.position}</h1>
 
-        <div className="text-justify">{speaker?.des}</div>
+        <div className="text-justify mb-16 md:mb-0">{speaker?.des}</div>
 
-        <div className="font-medium">{speaker?.topic}</div>
+        <div className="font-medium absolute bottom-5 mr-8">
+          {speaker?.topic}
+        </div>
       </div>
     </div>
   );

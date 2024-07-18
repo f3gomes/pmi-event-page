@@ -6,17 +6,21 @@ import AboutEvent from "@/components/about";
 import TimerContent from "@/components/timer-content";
 import SpeakerSection from "@/components/speaker-section";
 import Loading from "./loading";
+import SponsorSection from "@/components/sponsor-section";
+import EventLocation from "@/components/event-location";
 
 export default function Home() {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <Navbar />
+        <Navbar home />
         <Hero />
       </Suspense>
       <AboutEvent />
       <SpeakerSection />
+      <SponsorSection />
       <TimerContent />
+      <EventLocation />
       <Footer />
     </>
   );

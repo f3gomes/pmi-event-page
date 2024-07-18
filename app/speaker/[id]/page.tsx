@@ -10,18 +10,16 @@ interface SpeakerPageProps {
 
 const SpeakerPage = ({ params: { id } }: SpeakerPageProps) => {
   return (
-    <div className="flex flex-col">
-      <Navbar />
-
-      <div className="flex justify-center mt-28 h-screen bg-gradient-to-b from-orange-300 to-orange-700">
-        <SpeakerDetails speakerId={id} />
-      </div>
-
-      <div className="-mt-28">
-        <Footer />
-      </div>
-    </div>
+    <>
+      <Navbar home={false} />
+      <div className="h-72 mt-28 -mb-96 xl:-mb-[25rem] rounded-b-3xl bg-gradient-to-b from-event-300 via-event-200 to-event-400"></div>
+      <div className="h-6"></div>
+      <SpeakerDetails speakerId={id} />
+      <Footer />
+    </>
   );
 };
 
 export default SpeakerPage;
+
+// bg-gradient-to-b from-event-300 via-event-200 to-event-400

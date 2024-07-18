@@ -33,7 +33,7 @@ const AboutEvent = () => {
       </Typography>
       <Typography
         variant="lead"
-        className="mt-4 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
+        className="lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
         Bem-vindo ao Congresso Regional de Gestão, Projetos e Liderança (CRGPL),
         o ponto de encontro para líderes e gestores de projetos no Estado do
@@ -47,7 +47,7 @@ const AboutEvent = () => {
 
       <Typography
         variant="lead"
-        className="mt-4 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
+        className="lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
         O Project Management Institute (PMI) é uma associação profissional líder
         mundial para uma comunidade global crescente de milhões de profissionais
@@ -59,7 +59,7 @@ const AboutEvent = () => {
         crescente da inteligência artificial no gerenciamento de projetos.
       </Typography>
 
-      {/* <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
+      {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />
         ))}

@@ -3,10 +3,11 @@ export const EVENT_CONTENT = [
     id: 1,
     title: "Speaker",
     topic: "Inteligência Artificial - Perspectiva, Oportunidades e Futuro",
-    des: "Lidera o desenvolvimento de negócios em Analytcs, Data Science, Machine Learning, e afins. Possui mais de 18 anos de experiẽncia em empresas multinacionais de tecnologia, apoiando várias áreas de negócio, novos produtos e serviços e desenvolvimento de pessoas. Formado em Administração de Empresas. Tem participado ainda em inúmeros cursos de pós-graduação em renomadas instituições tais como Duke University, Comlumbia University, London Business School e University of Michigan",
+    des: "Lidera o desenvolvimento de negócios em Analytcs, Data Science, Machine Learning, e afins. Possui mais de 18 anos de experiência em empresas multinacionais de tecnologia, apoiando várias áreas de negócio, novos produtos e serviços e desenvolvimento de pessoas. Formado em Administração de Empresas. Tem participado ainda em inúmeros cursos de pós-graduação em renomadas instituições tais como Duke University, Comlumbia University, London Business School e University of Michigan",
     name: "Luiz Henrique",
     position: "Sales Practice Lead de Data, Analytics & AI no Google",
     img: "/img/speakers/luiz-henrique.jpeg",
+    linkedin: "https://www.linkedin.com/in/luishenriquesantana/",
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ export const EVENT_CONTENT = [
     name: "Robson Santos",
     position: "Gerente de Experiência do Usuário no Magalu",
     img: "/img/speakers/robson.jpeg",
+    linkedin: "https://www.linkedin.com/in/robsonsantos/",
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export const EVENT_CONTENT = [
     name: "Erika Nagamine",
     position: "Arquiteta de Soluções, Especialsta em Dados & AI na AWS",
     img: "/img/speakers/erika.jpeg",
+    linkedin: "https://www.linkedin.com/in/erika-nagamine/",
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ export const EVENT_CONTENT = [
     name: "Fábio Sousa",
     position: "Compass UOL",
     img: "/img/speakers/fabio.jpeg",
+    linkedin: "https://www.linkedin.com/in/fabiohfs/",
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ export const EVENT_CONTENT = [
     name: "Márcia Sampaio",
     position: "SERPRO",
     img: "/img/speakers/marcia.jpeg",
+    linkedin: "https://www.linkedin.com/in/marciagsg/",
   },
   {
     id: 6,
@@ -53,6 +58,7 @@ export const EVENT_CONTENT = [
     name: "João Piancó",
     position: "Power2You",
     img: "/img/speakers/joaop.jpeg",
+    linkedin: "https://www.linkedin.com/in/jo%C3%A3olu%C3%ADspianc%C3%B3/",
   },
   {
     id: 7,
@@ -62,6 +68,7 @@ export const EVENT_CONTENT = [
     name: "Robes Baima",
     position: "Grupo Edson Queiroz",
     img: "/img/speakers/robes.jpeg",
+    linkedin: "https://www.linkedin.com/in/robes/",
   },
   {
     id: 8,
@@ -71,6 +78,8 @@ export const EVENT_CONTENT = [
     name: "Rafael Vilela",
     position: "Portfolio Formação",
     img: "/img/speakers/rafael.jpeg",
+    linkedin:
+      "https://www.linkedin.com/in/rafael-heliton-pereira-vilela-a0372b66/",
   },
   {
     id: 9,
@@ -80,6 +89,7 @@ export const EVENT_CONTENT = [
     name: "Alex Amarante",
     position: "Formação Plena",
     img: "/img/speakers/alex.jpeg",
+    linkedin: "https://www.linkedin.com/in/profalexamarante/",
   },
   {
     id: 10,
@@ -89,6 +99,7 @@ export const EVENT_CONTENT = [
     name: "Silvia Muniz",
     position: "Controladoria do Governo do Ceará",
     img: "/img/speakers/silvia.jpeg",
+    linkedin: "https://www.linkedin.com/in/silvia-muniz-8b2390a3/",
   },
   {
     id: 11,
@@ -98,6 +109,7 @@ export const EVENT_CONTENT = [
     name: "Davi Rodrigues",
     position: "Nõvi",
     img: "/img/speakers/davi.jpeg",
+    linkedin: "https://www.linkedin.com/in/davixrodrigues/",
   },
   {
     id: 12,
@@ -107,6 +119,7 @@ export const EVENT_CONTENT = [
     name: "Leo Lacerda",
     position: "Unifor",
     img: "/img/speakers/leo.jpeg",
+    linkedin: "https://www.linkedin.com/in/leolacerda/",
   },
   {
     id: 13,
@@ -116,6 +129,7 @@ export const EVENT_CONTENT = [
     name: "Denise Barroso",
     position: "PliQ",
     img: "/img/speakers/denise.jpeg",
+    linkedin: "https://www.linkedin.com/in/denisebarrosocx/",
   },
   {
     id: 14,
@@ -125,6 +139,7 @@ export const EVENT_CONTENT = [
     name: "João Justo",
     position: "Makro",
     img: "/img/speakers/joao.jpeg",
+    linkedin: "https://www.linkedin.com/in/joaojusto/",
   },
   {
     id: 15,
@@ -134,5 +149,6 @@ export const EVENT_CONTENT = [
     name: "Filipe Sousa",
     position: "IRIS",
     img: "/img/speakers/filipe.jpeg",
+    linkedin: "https://www.linkedin.com/in/filipe-sousa-costa/",
   },
 ];

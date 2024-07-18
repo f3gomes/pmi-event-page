@@ -4,17 +4,10 @@ import React, { useEffect, useState } from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
-  Button,
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  XMarkIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,6 +16,10 @@ interface NavItemProps {
   href?: string;
   open?: boolean;
   setOpen?: any;
+}
+
+interface NavbarProps {
+  home: boolean;
 }
 
 function NavItem({ children, href, open, setOpen }: NavItemProps) {
@@ -48,23 +45,31 @@ function NavItem({ children, href, open, setOpen }: NavItemProps) {
 const NAV_MENU = [
   {
     name: "Início",
-    href: "#hero",
+    href: "#",
   },
   {
     name: "Sobre",
     href: "#about",
   },
   {
-    name: "Programação",
+    name: "Speakers",
     href: "#speakers",
   },
   {
-    name: "Datas",
+    name: "Patrocínio",
+    href: "#sponsor",
+  },
+  {
+    name: "Data",
     href: "#where",
+  },
+  {
+    name: "Local",
+    href: "#location",
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ home }: NavbarProps) => {
   const [open, setOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -99,40 +104,32 @@ const Navbar = () => {
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0 h-28"
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <Link href={"/"}>
+      <div className="container mx-auto h-full flex items-center justify-center">
+        <Link href={"/"} className="absolute top-0 left-0">
           <Image
             priority
-            width={200}
-            height={75}
+            width={0}
+            height={0}
+            sizes="100vw"
             src={"/logo/logo.png"}
-            alt="testimonial image"
-            className="cursor-pointer"
+            alt="logo"
+            className="cursor-pointer w-auto h-28"
           />
         </Link>
 
-        <div className="-ml-24">
+        <div className="">
           <ul
-            className={` hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
+            className={` hidden items-center gap-6 lg:flex ${isScrolling || !home ? "text-gray-900" : "text-white"
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (
               <NavItem key={name} href={href}>
-                <span>{name}</span>
+                <span className="font-medium">{name}</span>
               </NavItem>
             ))}
           </ul>
         </div>
 
-        <div className="hidden items-center gap-4 lg:flex">
-          <Button
-            variant="text"
-            className="invisible"
-            color={isScrolling ? "gray" : "white"}
-          >
-            Entrar
-          </Button>
-        </div>
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
