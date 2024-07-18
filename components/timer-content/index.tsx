@@ -5,7 +5,7 @@ const TimerContent = () => {
   return (
     <div
       id="where"
-      className="flex items-center justify-center gap-8 flex-col h-[26rem] -mb-10 bg-event-300/60"
+      className="flex items-center justify-center gap-8 flex-col h-[26rem] bg-event-300/60"
     >
       <div>
         <Image
