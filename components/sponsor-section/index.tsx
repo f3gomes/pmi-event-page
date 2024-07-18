@@ -27,16 +27,18 @@ const SponsorSection = () => {
   return (
     <div
       id="sponsor"
-      className="flex items-center justify-center gap-10 flex-col h-[26rem] bg-"
+      className="flex items-center justify-center gap-16 flex-col min-h-[26rem] p-6"
     >
       <h1 className="text-4xl font-medium text-center">Patrocinadores</h1>
 
-      <div className="flex gap-6 orang">
-        {sponsorList.map((item) => {
-          return (
-            <SponsorCard key={item.medal} img={item.logo} fill={item.fill} />
-          );
-        })}
+      <div className="flex gap-6 flex-wrap justify-center">
+        {sponsorList
+          .map((item) => {
+            return (
+              <SponsorCard key={item.medal} img={item.logo} fill={item.fill} />
+            );
+          })
+          .reverse()}
       </div>
     </div>
   );

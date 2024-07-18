@@ -9,7 +9,14 @@ interface SponsorCardProps {
 const SponsorCard = ({ img, fill }: SponsorCardProps) => {
   return (
     <div className="flex justify-center items-center shadow-lg p-4 rounded-lg relative">
-      <Image priority width={200} height={300} src={img} alt="logo" />
+      <Image
+        width={0}
+        height={0}
+        src={img}
+        sizes="100vw"
+        alt="logo"
+        className="w-auto h-32"
+      />
 
       <Medal fill={fill} />
     </div>
