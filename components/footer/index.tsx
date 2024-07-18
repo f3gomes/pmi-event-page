@@ -52,6 +52,7 @@ const Footer = () => {
               <li key={index}>
                 <Link
                   href={link.href}
+                  target="_blank"
                   className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
                 >
                   {link.icon}

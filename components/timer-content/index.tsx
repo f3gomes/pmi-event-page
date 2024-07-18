@@ -5,15 +5,16 @@ const TimerContent = () => {
   return (
     <div
       id="where"
-      className="flex items-center justify-center gap-4 flex-col h-96 -mb-10 bg-event-300/60"
+      className="flex items-center justify-center gap-8 flex-col h-[26rem] -mb-10 bg-event-300/60"
     >
       <div>
         <Image
-          width={342}
-          height={147}
-          src={"/logo/logo-large.png"}
+          width={0}
+          height={0}
+          sizes="100vw"
           alt="logo"
-          className="-mt-6"
+          src={"/logo/logo-large.png"}
+          className="-mt-6 w-[30rem] h-auto"
         />
       </div>
 

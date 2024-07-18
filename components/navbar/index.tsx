@@ -8,13 +8,7 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  XMarkIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
+import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -48,7 +42,7 @@ function NavItem({ children, href, open, setOpen }: NavItemProps) {
 const NAV_MENU = [
   {
     name: "Início",
-    href: "#hero",
+    href: "#",
   },
   {
     name: "Sobre",
@@ -97,25 +91,23 @@ const Navbar = () => {
       fullWidth
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0 h-28"
+      className="fixed top-0 z-50 border-0 h-28 flex justify-center"
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <Link href={"/"}>
+      <div className="container mx-auto h-full flex items-center justify-center absolute top-0">
+        <Link href={"/"} className="absolute top-0 left-0">
           <Image
             priority
-            width={200}
-            height={75}
+            width={0}
+            height={0}
+            sizes="100vw"
             src={"/logo/logo.png"}
             alt="testimonial image"
-            className="cursor-pointer"
+            className="cursor-pointer w-auto h-28"
           />
         </Link>
 
-        <div className="-ml-24">
-          <ul
-            className={` hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"
-              }`}
-          >
+        <div className="">
+          <ul className={"hidden items-center gap-6 lg:flex text-gray-900"}>
             {NAV_MENU.map(({ name, href }) => (
               <NavItem key={name} href={href}>
                 <span>{name}</span>
@@ -124,15 +116,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden items-center gap-4 lg:flex">
-          <Button
-            variant="text"
-            className="invisible"
-            color={isScrolling ? "gray" : "white"}
-          >
-            Entrar
-          </Button>
-        </div>
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
