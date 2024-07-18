@@ -32,7 +32,7 @@ const SpeakerCard = ({ id, title, name, position, img }: SpeakerCardProps) => {
             width={768}
             height={768}
             src={img}
-            alt="testimonial image"
+            alt="profile"
             className="h-full w-full object-cover hover:scale-105 transition duration-300"
           />
         </CardHeader>

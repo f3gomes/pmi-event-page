@@ -56,8 +56,16 @@ const NAV_MENU = [
     href: "#speakers",
   },
   {
-    name: "Datas",
+    name: "Patrocínio",
+    href: "#sponsor",
+  },
+  {
+    name: "Data",
     href: "#where",
+  },
+  {
+    name: "Local",
+    href: "#location",
   },
 ];
 
@@ -104,7 +112,7 @@ const Navbar = ({ home }: NavbarProps) => {
             height={0}
             sizes="100vw"
             src={"/logo/logo.png"}
-            alt="testimonial image"
+            alt="logo"
             className="cursor-pointer w-auto h-28"
           />
         </Link>
