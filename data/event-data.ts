@@ -3,7 +3,7 @@ export const EVENT_CONTENT = [
     id: 1,
     title: "Speaker",
     topic: "Inteligência Artificial - Perspectiva, Oportunidades e Futuro",
-    des: "Lidera o desenvolvimento de negócios em Analytcs, Data Science, Machine Learning, e afins. Possui mais de 18 anos de experiẽncia em empresas multinacionais de tecnologia, apoiando várias áreas de negócio, novos produtos e serviços e desenvolvimento de pessoas. Formado em Administração de Empresas. Tem participado ainda em inúmeros cursos de pós-graduação em renomadas instituições tais como Duke University, Comlumbia University, London Business School e University of Michigan",
+    des: "Lidera o desenvolvimento de negócios em Analytcs, Data Science, Machine Learning, e afins. Possui mais de 18 anos de experiência em empresas multinacionais de tecnologia, apoiando várias áreas de negócio, novos produtos e serviços e desenvolvimento de pessoas. Formado em Administração de Empresas. Tem participado ainda em inúmeros cursos de pós-graduação em renomadas instituições tais como Duke University, Comlumbia University, London Business School e University of Michigan",
     name: "Luiz Henrique",
     position: "Sales Practice Lead de Data, Analytics & AI no Google",
     img: "/img/speakers/luiz-henrique.jpeg",

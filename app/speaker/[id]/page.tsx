@@ -13,11 +13,11 @@ const SpeakerPage = ({ params: { id } }: SpeakerPageProps) => {
     <div className="flex flex-col">
       <Navbar />
 
-      <div className="flex justify-center mt-28 h-screen bg-gradient-to-b from-event-300 via-event-200 to-event-400">
+      <div className="flex justify-center mt-10 md:mt-28 md:h-screen bg-gradient-to-b from-event-300 via-event-200 to-event-400">
         <SpeakerDetails speakerId={id} />
       </div>
 
-      <div className="-mt-28">
+      <div className="md:-mt-28">
         <Footer />
       </div>
     </div>
