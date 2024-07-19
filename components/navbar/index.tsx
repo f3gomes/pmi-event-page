@@ -123,7 +123,7 @@ const Navbar = ({ home }: NavbarProps) => {
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (
-              <NavItem key={name} href={href}>
+              <NavItem key={name} href={home ? href : `/${href}`}>
                 <span className="font-medium">{name}</span>
               </NavItem>
             ))}
@@ -148,7 +148,12 @@ const Navbar = ({ home }: NavbarProps) => {
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, href }) => (
-              <NavItem key={name} href={href} open={open} setOpen={setOpen}>
+              <NavItem
+                key={name}
+                open={open}
+                setOpen={setOpen}
+                href={home ? href : `/${href}`}
+              >
                 {name}
               </NavItem>
             ))}
