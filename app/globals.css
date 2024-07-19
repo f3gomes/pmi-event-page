@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(#073ba3, #782794, #4b2292);
+
+    @apply absolute h-[100%] w-[100%] hover:animate-border-spin content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply absolute left-[2px] top-[2px] h-[calc(99%-2px)] w-[calc(99%-2px)] rounded-2xl bg-[#47bfe0];
+  }
+}

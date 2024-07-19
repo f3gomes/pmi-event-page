@@ -27,7 +27,7 @@ const SponsorSection = () => {
   return (
     <div
       id="sponsor"
-      className="flex items-center justify-center gap-16 flex-col min-h-[26rem] p-6"
+      className="flex items-center justify-center gap-16 flex-col min-h-[26rem] px-6 py-32"
     >
       <h1 className="text-4xl font-medium text-center">Patrocinadores</h1>
 

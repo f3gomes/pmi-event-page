@@ -4,8 +4,8 @@ import Timer from "../timer";
 const TimerContent = () => {
   return (
     <div
-      id="where"
-      className="flex items-center justify-center gap-8 flex-col h-[26rem] bg-event-300/60"
+      id="timer"
+      className="flex items-center justify-center gap-8 flex-col py-32 min-h-[26rem] bg-event-300/60"
     >
       <div>
         <Image

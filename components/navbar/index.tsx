@@ -61,7 +61,7 @@ const NAV_MENU = [
   },
   {
     name: "Data",
-    href: "#where",
+    href: "#timer",
   },
   {
     name: "Local",
@@ -113,7 +113,7 @@ const Navbar = ({ home }: NavbarProps) => {
             sizes="100vw"
             src={"/logo/logo.png"}
             alt="logo"
-            className="cursor-pointer w-auto h-28"
+            className="cursor-pointer w-11/12 h-28"
           />
         </Link>
 
@@ -123,7 +123,7 @@ const Navbar = ({ home }: NavbarProps) => {
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (
-              <NavItem key={name} href={href}>
+              <NavItem key={name} href={home ? href : `/${href}`}>
                 <span className="font-medium">{name}</span>
               </NavItem>
             ))}
@@ -148,7 +148,12 @@ const Navbar = ({ home }: NavbarProps) => {
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, href }) => (
-              <NavItem key={name} href={href} open={open} setOpen={setOpen}>
+              <NavItem
+                key={name}
+                open={open}
+                setOpen={setOpen}
+                href={home ? href : `/${href}`}
+              >
                 {name}
               </NavItem>
             ))}

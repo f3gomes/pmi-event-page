@@ -4,9 +4,9 @@ const EventLocation = () => {
   return (
     <div
       id="location"
-      className="flex items-center justify-center gap-10 flex-col py-16 px-4"
+      className="flex items-center justify-center gap-10 flex-col py-32 px-4"
     >
-      <h1 className="text-4xl font-medium text-center">Local do Evento</h1>
+      <h1 className="text-4xl font-semibold text-center">Local do Evento</h1>
 
       <div className="flex gap-6 flex-wrap justify-center max-w-full">
         <div>

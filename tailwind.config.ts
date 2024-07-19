@@ -19,6 +19,16 @@ const config: Config = withMT({
       screens: {
         xs: "400px",
       },
+      keyframes: {
+        "border-spin": {
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
+      },
+      animation: {
+        "border-spin": "border-spin 3s linear infinite",
+      },
     },
   },
   plugins: [],

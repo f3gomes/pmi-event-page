@@ -22,7 +22,7 @@ const AboutEvent = () => {
   return (
     <section
       id="about"
-      className="container mx-auto flex flex-col items-center px-4 py-10"
+      className="container mx-auto flex flex-col items-center px-4 py-32"
     >
       <Typography variant="h4" className="text-center mb-8" color="orange">
         Sobre do evento
