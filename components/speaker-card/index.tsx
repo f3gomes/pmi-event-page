@@ -17,15 +17,18 @@ interface SpeakerCardProps {
 
 const SpeakerCard = ({ id, title, name, position, img }: SpeakerCardProps) => {
   return (
-    <Link href={`/speaker/${id}`}>
+    <Link
+      href={`/speaker/${id}`}
+      className="h-[24rem] w-[18rem] rounded-xl bg-[#47bfe0]"
+    >
       <Card
         color="transparent"
         shadow={false}
-        className="relative mb-10 h-[24rem] w-[18rem] bg-[#47bfe0] cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
+        className="relative mb-10 h-[24rem] w-[18rem] cursor-pointer border-[1px] border-transparent hover:border-event-200 hover:border-[1px] transition duration-300"
       >
         <CardHeader
-          floated={false}
           shadow={false}
+          floated={false}
           className="max-h-[30rem] w-full mt-0 ml-0 rounded-b-none"
         >
           <Image
@@ -52,7 +55,10 @@ const SpeakerCard = ({ id, title, name, position, img }: SpeakerCardProps) => {
             </div>
           </div>
 
-          <Typography variant="h6" className="absolute bottom-1 font-bold text-event-200">
+          <Typography
+            variant="h6"
+            className="absolute bottom-1 font-bold text-event-200"
+          >
             {title}
           </Typography>
         </CardBody>
