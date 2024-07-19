@@ -7,7 +7,7 @@ const SpeakerSection = () => {
   return (
     <section
       id="speakers"
-      className="py-8 md:px-8 lg:py-20 bg-gradient-to-b from-event-300 via-event-200 to-event-400"
+      className="py-32 md:px-8 bg-gradient-to-b from-event-300 via-event-200 to-event-400"
     >
       <div className="mx-auto flex justify-center flex-wrap gap-6 gap-y-0">
         {EVENT_CONTENT.map((props) => (

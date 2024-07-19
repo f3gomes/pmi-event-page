@@ -61,7 +61,7 @@ const NAV_MENU = [
   },
   {
     name: "Data",
-    href: "#where",
+    href: "#timer",
   },
   {
     name: "Local",
