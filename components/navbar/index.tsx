@@ -113,7 +113,7 @@ const Navbar = ({ home }: NavbarProps) => {
             sizes="100vw"
             src={"/logo/logo.png"}
             alt="logo"
-            className="cursor-pointer w-auto h-28"
+            className="cursor-pointer w-11/12 h-28"
           />
         </Link>
 
