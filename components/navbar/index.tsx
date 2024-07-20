@@ -80,6 +80,12 @@ const Navbar = ({ home }: NavbarProps) => {
       "resize",
       () => window.innerWidth >= 960 && setOpen(false)
     );
+
+    if (!home) {
+      setIsScrolling(true);
+    }
+
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
