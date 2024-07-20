@@ -21,5 +21,3 @@ const SpeakerPage = ({ params: { id } }: SpeakerPageProps) => {
 };
 
 export default SpeakerPage;
-
-// bg-gradient-to-b from-event-300 via-event-200 to-event-400

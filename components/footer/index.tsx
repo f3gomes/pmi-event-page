@@ -22,7 +22,7 @@ const LINKS = [
 const Footer = () => {
   return (
     <footer id="footer">
-      <div className="flex w-full py-32 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
+      <div className="flex w-full py-12 flex-col justify-center items-center bg-gray-900 text-blue-gray-50">
         <p className="text-2xl md:text-3xl text-center font-bold" color="white">
           Garanta seu ingresso e junte-se a nós!
         </p>

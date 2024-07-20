@@ -15,13 +15,13 @@ export default function Home() {
       <Suspense fallback={<Loading />}>
         <Navbar home />
         <Hero />
+        <AboutEvent />
+        <SpeakerSection />
+        <SponsorSection />
+        <TimerContent />
+        <EventLocation />
+        <Footer />
       </Suspense>
-      <AboutEvent />
-      <SpeakerSection />
-      <SponsorSection />
-      <TimerContent />
-      <EventLocation />
-      <Footer />
     </>
   );
 }

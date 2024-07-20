@@ -2,11 +2,13 @@ import Image from "next/image";
 
 const EventLocation = () => {
   return (
-    <div
+    <section
       id="location"
-      className="flex items-center justify-center gap-10 flex-col py-32 px-4"
+      className="flex items-center justify-center gap-10 flex-col py-12 px-4 scroll-mt-20"
     >
-      <h1 className="text-4xl font-semibold text-center">Local do Evento</h1>
+      <h1 className="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-inherit text-center">
+        Local do Evento
+      </h1>
 
       <div className="flex gap-6 flex-wrap justify-center max-w-full">
         <div>
@@ -30,7 +32,7 @@ const EventLocation = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

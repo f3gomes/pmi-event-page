@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { EVENT_CONTENT } from "@/data/event-data";
 import { Button } from "@material-tailwind/react";
 import Spinner from "../spinner";
-import { LinkedinIcon } from "lucide-react";
 
 interface SpeakerDetailsProps {
   speakerId: string;
@@ -27,21 +27,21 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
 
   if (!speaker) {
     return (
-      <div className="w-full flex justify-center">
+      <div className="w-full flex h-screen justify-center items-center">
         <Spinner />
       </div>
     );
   }
 
   return (
-    <div className="flex justify-center py-28 md:h-screen items-center flex-col md:flex-row gap-4 px-1">
+    <div className="flex justify-center py-28 items-center flex-col lg:flex-row gap-4 px-1">
       <div className="w-96 flex flex-col items-center gap-4">
         <Image
           width={768}
           height={768}
           src={speaker?.img}
           alt={speaker?.name}
-          className="rounded-xl"
+          className="rounded-xl min-w-96"
         />
 
         <Link href={"/#speakers"} className="w-full">
@@ -51,7 +51,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
         </Link>
       </div>
 
-      <div className="flex relative flex-col rounded-xl gap-3 md:gap-6 max-w-[45.625rem] md:h-[28rem] p-8 bg-blue-gray-50">
+      <div className="flex relative flex-col rounded-xl gap-2 xl:gap-6 max-w-[45.625rem] md:h-[28rem] p-5 xl:p-8 bg-blue-gray-50">
         <div className="flex justify-between">
           <h3 className="uppercase text-sm">{speaker?.title}</h3>
 
@@ -62,7 +62,9 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
           </Link>
         </div>
 
-        <h1 className="font-bold text-3xl md:text-5xl">{speaker?.name}</h1>
+        <h1 className="font-bold text-3xl lg:text-3xl xl:text-5xl">
+          {speaker?.name}
+        </h1>
 
         <h1 className="font-medium text-blue-gray-700">{speaker?.position}</h1>
 
