@@ -3,9 +3,9 @@ import Timer from "../timer";
 
 const TimerContent = () => {
   return (
-    <div
+    <section
       id="timer"
-      className="flex items-center justify-center gap-8 flex-col py-32 min-h-[26rem] bg-event-300/60"
+      className="flex items-center justify-center gap-8 flex-col py-12 scroll-mt-20 bg-event-300/60"
     >
       <div>
         <Image
@@ -25,7 +25,7 @@ const TimerContent = () => {
       <div className="font-bold text-white">
         <Timer />
       </div>
-    </div>
+    </section>
   );
 };
 

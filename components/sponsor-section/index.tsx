@@ -25,11 +25,13 @@ const sponsorList = [
 
 const SponsorSection = () => {
   return (
-    <div
+    <section
       id="sponsor"
-      className="flex items-center justify-center gap-16 flex-col min-h-[26rem] px-6 py-32"
+      className="flex items-center mx-auto justify-center gap-16 flex-col px-6 py-12 scroll-mt-20"
     >
-      <h1 className="text-4xl font-medium text-center">Patrocinadores</h1>
+      <h1 className="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-inherit text-center">
+        Patrocinadores
+      </h1>
 
       <div className="flex gap-6 flex-wrap justify-center">
         {sponsorList
@@ -40,7 +42,7 @@ const SponsorSection = () => {
           })
           .reverse()}
       </div>
-    </div>
+    </section>
   );
 };
 
