@@ -31,7 +31,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="img/png" />
       </head>
       <body className={font.className}>
-        <Layout>{children}</Layout>
+        {children}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
