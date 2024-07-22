@@ -136,6 +136,18 @@ const Navbar = ({ home }: NavbarProps) => {
           </ul>
         </div>
 
+        <Link
+          target="_blank"
+          className="absolute right-1/2 -mr-[52.16px] hidden lg:block lg:right-6 lg:-mr-0"
+          href={
+            "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
+          }
+        >
+          <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+            Comprar
+          </button>
+        </Link>
+
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}

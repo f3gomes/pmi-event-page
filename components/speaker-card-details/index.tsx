@@ -34,7 +34,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
   }
 
   return (
-    <div className="flex justify-center py-28 items-center flex-col lg:flex-row gap-4 px-1">
+    <div className="flex justify-center py-32 items-center flex-col lg:flex-row gap-4 px-3">
       <div className="w-96 flex flex-col items-center gap-4">
         <Image
           width={768}
