@@ -5,7 +5,6 @@ import {
   Navbar as MTNavbar,
   Collapse,
   IconButton,
-  Typography,
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
@@ -30,14 +29,9 @@ function NavItem({ children, href, open, setOpen }: NavItemProps) {
         open && setOpen(false);
       }}
     >
-      <Typography
-        as="a"
-        href={href || "#"}
-        variant="paragraph"
-        className="flex items-center gap-2 font-medium"
-      >
+      <Link href={href || "#"} className="flex items-center gap-2 font-medium">
         {children}
-      </Typography>
+      </Link>
     </li>
   );
 }
@@ -125,7 +119,7 @@ const Navbar = ({ home }: NavbarProps) => {
 
         <div className="">
           <ul
-            className={` hidden items-center gap-6 lg:flex ${isScrolling || !home ? "text-gray-900" : "text-white"
+            className={` hidden items-center gap-6 xl:flex ${isScrolling || !home ? "text-gray-900" : "text-white"
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (
@@ -138,7 +132,7 @@ const Navbar = ({ home }: NavbarProps) => {
 
         <Link
           target="_blank"
-          className="absolute right-1/2 -mr-[52.16px] hidden lg:block lg:right-6 lg:-mr-0"
+          className="absolute hidden xl:block xl:right-6"
           href={
             "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
           }
@@ -152,7 +146,7 @@ const Navbar = ({ home }: NavbarProps) => {
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
+          className="ml-auto inline-block xl:hidden"
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
