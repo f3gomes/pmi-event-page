@@ -9,9 +9,8 @@ const font = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Event Landing Page",
-  description:
-    "Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.",
+  title: "PMI - IMPACTO INOVAÇÃO IA",
+  description: "14º Congresso Regional de Gestão, Projetos e Liderança - PMICE",
 };
 
 export default function RootLayout({

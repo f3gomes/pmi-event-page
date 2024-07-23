@@ -2,7 +2,7 @@ const AboutEvent = () => {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row justify-center gap-8 px-8 lg:px-20 py-14 scroll-mt-20"
+      className="flex flex-col md:flex-row justify-center gap-8 px-8 lg:px-16 xl:px-20 py-14 scroll-mt-20"
     >
       <div className="flex flex-col gap-6 antialiased text-inherit text-xl font-normal lg:max-w-4xl">
         <h1 className="block antialiased text-3xl font-semibold text-center">

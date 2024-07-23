@@ -144,7 +144,7 @@ const Navbar = ({ home }: NavbarProps) => {
 
         <IconButton
           variant="text"
-          color={isScrolling ? "gray" : "white"}
+          color={"gray"}
           onClick={handleOpen}
           className="ml-auto inline-block xl:hidden"
         >
