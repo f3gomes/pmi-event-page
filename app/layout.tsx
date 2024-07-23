@@ -1,6 +1,5 @@
 import type, { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Layout from "@/components/layout";
 import "./globals.css";
 
 const font = Montserrat({
@@ -10,9 +9,8 @@ const font = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Event Landing Page",
-  description:
-    "Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.",
+  title: "PMI - IMPACTO INOVAÇÃO IA",
+  description: "14º Congresso Regional de Gestão, Projetos e Liderança - PMICE",
 };
 
 export default function RootLayout({
@@ -31,7 +29,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.png" type="img/png" />
       </head>
       <body className={font.className}>
-        <Layout>{children}</Layout>
+        {children}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"

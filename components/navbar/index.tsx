@@ -5,7 +5,6 @@ import {
   Navbar as MTNavbar,
   Collapse,
   IconButton,
-  Typography,
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 import Image from "next/image";
@@ -30,14 +29,9 @@ function NavItem({ children, href, open, setOpen }: NavItemProps) {
         open && setOpen(false);
       }}
     >
-      <Typography
-        as="a"
-        href={href || "#"}
-        variant="paragraph"
-        className="flex items-center gap-2 font-medium"
-      >
+      <Link href={href || "#"} className="flex items-center gap-2 font-medium">
         {children}
-      </Typography>
+      </Link>
     </li>
   );
 }
@@ -125,7 +119,7 @@ const Navbar = ({ home }: NavbarProps) => {
 
         <div className="">
           <ul
-            className={` hidden items-center gap-6 lg:flex ${isScrolling || !home ? "text-gray-900" : "text-white"
+            className={` hidden items-center gap-6 xl:flex ${isScrolling || !home ? "text-gray-900" : "text-white"
               }`}
           >
             {NAV_MENU.map(({ name, href }) => (
@@ -136,11 +130,23 @@ const Navbar = ({ home }: NavbarProps) => {
           </ul>
         </div>
 
+        <Link
+          target="_blank"
+          className="absolute hidden xl:block xl:right-6"
+          href={
+            "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
+          }
+        >
+          <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+            Comprar
+          </button>
+        </Link>
+
         <IconButton
           variant="text"
-          color={isScrolling ? "gray" : "white"}
+          color={"gray"}
           onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
+          className="ml-auto inline-block xl:hidden"
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />

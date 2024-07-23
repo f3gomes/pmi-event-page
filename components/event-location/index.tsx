@@ -6,7 +6,7 @@ const EventLocation = () => {
       id="location"
       className="flex items-center justify-center gap-10 flex-col py-12 px-4 scroll-mt-20"
     >
-      <h1 className="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-inherit text-center">
+      <h1 className="block antialiased tracking-normal text-3xl font-semibold leading-snug text-inherit text-center">
         Local do Evento
       </h1>
 
