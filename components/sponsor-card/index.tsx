@@ -10,7 +10,7 @@ interface SponsorCardProps {
 
 const SponsorCard = ({ img, medal, text, bg }: SponsorCardProps) => {
   return (
-    <div className="flex justify-center items-center shadow-lg p-4 rounded-lg relative w-96">
+    <div className="flex justify-center items-center shadow-lg p-4 rounded-lg relative w-96 select-none">
       <Image
         width={0}
         height={0}
@@ -21,7 +21,10 @@ const SponsorCard = ({ img, medal, text, bg }: SponsorCardProps) => {
       />
 
       <p
-        className={cn(bg, "font-semibold absolute top-1 right-0 uppercase p-2 rounded-bl-2xl rounded-tr-lg w-28 text-center text-white")}
+        className={cn(
+          bg,
+          "font-semibold absolute top-1 right-0 uppercase p-2 rounded-bl-2xl rounded-tr-lg w-28 text-center text-white"
+        )}
       >
         {medal}
       </p>
