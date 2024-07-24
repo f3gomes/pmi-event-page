@@ -7,11 +7,11 @@ const iconClass = "hover:scale-125 transition duration-200";
 const LINKS = [
   {
     icon: <Linkedin className={iconClass} />,
-    href: "https://www.linkedin.com/in/company/pmiceara",
+    href: "https://www.linkedin.com/company/pmiceara/mycompany",
   },
   {
     icon: <Instagram className={iconClass} />,
-    href: "https://www.instagram.com/pmiceara/",
+    href: "https://www.instagram.com/pmiceara",
   },
   {
     icon: <Youtube className={iconClass} />,

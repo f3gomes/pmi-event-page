@@ -2,14 +2,14 @@ const AboutEvent = () => {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row justify-center gap-8 px-8 lg:px-16 xl:px-20 py-14 scroll-mt-20"
+      className="flex flex-col md:flex-row justify-center gap-20 px-8 lg:px-16 xl:px-20 py-14 scroll-mt-20"
     >
       <div className="flex flex-col gap-6 antialiased text-inherit text-xl font-normal lg:max-w-4xl">
         <h1 className="block antialiased text-3xl font-semibold text-center">
           Sobre o PMI
         </h1>
 
-        <div className="text-gray-700 text-justify flex flex-col gap-4">
+        <div className="text-gray-700 text-base text-justify flex flex-col gap-4">
           <p>
             O Project Management Institute - PMI® é uma organização
             internacional sem fins lucrativos que tem o objetivo de disseminar
@@ -47,7 +47,7 @@ const AboutEvent = () => {
           Sobre o Congresso:
         </h1>
 
-        <div className="text-gray-700 text-justify flex flex-col gap-4">
+        <div className="text-gray-700 text-base text-justify flex flex-col gap-4">
           <p>
             Preparados para embarcar em uma jornada de aprendizado e inovação? O
             14º Congresso Regional de Gestão, Projetos e Liderança (CRGPL) do
