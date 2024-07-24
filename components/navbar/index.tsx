@@ -1,14 +1,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import {
-  Navbar as MTNavbar,
-  Collapse,
-  IconButton,
-} from "@material-tailwind/react";
-import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
-import Image from "next/image";
+
 import Link from "next/link";
+import Image from "next/image";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Collapse, IconButton, Navbar as MTNavbar } from "@material-tailwind/react";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -130,17 +127,31 @@ const Navbar = ({ home }: NavbarProps) => {
           </ul>
         </div>
 
-        <Link
-          target="_blank"
-          className="absolute hidden xl:block xl:right-6"
-          href={
-            "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
-          }
-        >
-          <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
-            Comprar
-          </button>
-        </Link>
+        {isScrolling ? (
+          <Link
+            target="_blank"
+            className="absolute hidden xl:block xl:right-6"
+            href={
+              "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
+            }
+          >
+            <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-100 focus:outline-none bg-event-200 hover:brightness-125 hover:text-gray-200 rounded-lg border border-gray-200 focus:z-10 focus:ring-4 focus:ring-gray-100 transition duration-200">
+              Comprar
+            </button>
+          </Link>
+        ) : (
+          <Link
+            target="_blank"
+            className="absolute hidden xl:block xl:right-6"
+            href={
+              "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
+            }
+          >
+            <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 transition duration-200">
+              Comprar
+            </button>
+          </Link>
+        )}
 
         <IconButton
           variant="text"

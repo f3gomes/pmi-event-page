@@ -51,7 +51,7 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
         </Link>
       </div>
 
-      <div className="flex relative flex-col rounded-xl gap-2 xl:gap-6 max-w-[45.625rem] md:h-[28rem] p-5 xl:p-8 bg-blue-gray-50">
+      <div className="flex relative flex-col rounded-xl gap-2 xl:gap-4 max-w-[45.625rem] md:h-[28rem] p-5 xl:p-8 bg-blue-gray-50">
         <div className="flex justify-between">
           <h3 className="uppercase text-sm">{speaker?.title}</h3>
 
