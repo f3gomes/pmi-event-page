@@ -2,7 +2,8 @@ export const EVENT_CONTENT = [
   {
     id: 1,
     title: "Speaker",
-    topic: "Inteligência Artificial - Perspectiva, Oportunidades e Futuro",
+    topic:
+      "Tema da Palestra: Inteligência Artificial - Perspectiva, Oportunidades e Futuro",
     des: "Lidera o desenvolvimento de negócios em Analytcs, Data Science, Machine Learning, e afins. Possui mais de 18 anos de experiência em empresas multinacionais de tecnologia, apoiando várias áreas de negócio, novos produtos e serviços e desenvolvimento de pessoas. Formado em Administração de Empresas. Tem participado ainda em inúmeros cursos de pós-graduação em renomadas instituições tais como Duke University, Comlumbia University, London Business School e University of Michigan",
     name: "Luiz Henrique",
     position: "Sales Practice Lead de Data, Analytics & AI no Google",
@@ -13,7 +14,7 @@ export const EVENT_CONTENT = [
     id: 2,
     title: "Speaker",
     topic:
-      "Criando o cérebro da Lu: Oportunidades e desafios da inteligência artificial para o varejo",
+      "Tema da Palestra: Criando o cérebro da Lu: Oportunidades e desafios da inteligência artificial para o varejo",
     des: "Graduado em Design (ESDI - UERJ), mestre e doutor em Design (PUC - Rio), professor e pesquisador de temáticas relacionadas a pessoas, produtos e serviços em um mundo em constante transformação. Atua com pesquisa e concepção de novos produtos e serviços para inovação no varejo, conciliando necessidades das pessoas, oportunidades de negócios e disponibilidade de tecnologia",
     name: "Robson Santos",
     position: "Gerente de Experiência do Usuário no Magalu",
@@ -23,7 +24,8 @@ export const EVENT_CONTENT = [
   {
     id: 3,
     title: "Speaker",
-    topic: "Projetos com dados e IA Generativa, por onde começar?",
+    topic:
+      "Tema da Palestra: Projetos com dados e IA Generativa, por onde começar?",
     des: "Tem formação acadêmica sólida, graduada em Sistemas de Informação, com pós graduação em Administração de Banco de Dados, Engenharia de Dados e especialização em mineração de Dados Complexos pela Unicamp. Atua com clientes de diversos segmentos e já participou de mais de 200 projetos no Brasil e no mundo. Atualmente possui múltiplas certificações em dados e computação em nuvem. Ama compartilhar conhecimento em comunidades e é palestrante em eventos técnicos de destaques em todo o Brasil e no mundo.",
     name: "Erika Nagamine",
     position: "Arquiteta de Soluções, Especialsta em Dados & AI na AWS",
@@ -34,7 +36,7 @@ export const EVENT_CONTENT = [
     id: 4,
     title: "Workshop",
     topic:
-      "AgileAI - Dominando a Construção e Priorização do Backlog de Produtos com Inteligência Artificial",
+      "Tema do Workshop: AgileAI - Dominando a Construção e Priorização do Backlog de Produtos com Inteligência Artificial",
     des: "Especialista em agilidade e gestão de projetos, com certificações como LPM RTE, KCP, SSM, POPM, SAFe, PMP, DASSM, KMP, PSK. Experiência como Agile Coach, RTE e Agile Master em OKRs, SAFe, SCRUM e Kanban. Atualmente, Agile Coach na Compass.UOL e Agile Delivery Leader no Banco Carrefour. Trainer em práticas ágeis, Scrum e Kanban, e docente de metodologias ágeis e gestão de projetos.",
     name: "Fábio Sousa",
     position: "Compass UOL",
@@ -44,7 +46,8 @@ export const EVENT_CONTENT = [
   {
     id: 5,
     title: "Workshop",
-    topic: "Tomada de Decisão: Como desenvolver estratégias para me",
+    topic:
+      "Tema do Workshop: Tomada de Decisão: Como desenvolver estratégias para me",
     des: "Apaixonada por pessoas, agilidade, gestão e conhecimento, atuo há 20 anos no SERPRO, maior organização pública de TI do mundo. Tenho experiência em transformação ágil, UX, facilitação, LGPD e desenvolvimento de lideranças. Doutoranda em Engenharia de Software (UFPE), possuo várias especializações e MBAs, além de ser PMP certificada desde 2005 e Personal Coach (SLAC).",
     name: "Márcia Sampaio",
     position: "SERPRO",
@@ -54,7 +57,8 @@ export const EVENT_CONTENT = [
   {
     id: 6,
     title: "Workshop",
-    topic: "Sprint Planning na Prática - Gestão ágil para ambientes complexos",
+    topic:
+      "Tema do Workshop: Sprint Planning na Prática - Gestão ágil para ambientes complexos",
     des: "Com 18 anos de experiência em Lean Manufacturing, sou certificado em Lean Production (Technische Universität München), Black Belt Lean Six Sigma (CFSS), e Scrum Master (Argon). Diretor Executivo da Power2You, gerei mais de 36 milhões em melhorias em projetos. Professor de Pós-Graduação em instituições como FB Uni, UNIFOR e Unifametro. Graduado em Engenharia de Produção Mecânica (UFC) e pós-graduado em Gerenciamento de Projetos (FGV).",
     name: "João Piancó",
     position: "Power2You",
@@ -64,7 +68,8 @@ export const EVENT_CONTENT = [
   {
     id: 7,
     title: "Workshop",
-    topic: "Rolling Wave Planning - Adaptabilidade em Projetos Preditivos",
+    topic:
+      "Tema do Workshop: Rolling Wave Planning - Adaptabilidade em Projetos Preditivos",
     des: "Graduado em Ciência da Computação e Especialista em Gerenciamento de Projetos e Marketing & Inteligência de Mercado. PMP há 15 anos e é também certificado RMP pelo PMI, Prince2 Practitioner, PSM 01, SAFe Agilist, Prosci Practitioner, PMO-CP e HCMP. Atualmente é PMO Corporativo no Grupo Edson Queiroz, tento passado por outras grandes empresas como Unimed Fortaleza, Hapvida, 3 Corações e KPMG. É Past President do PMI-CE e professor há mais de 10 anos em cursos de pós-graduação das principais instituições do Ceará.",
     name: "Robes Baima",
     position: "Grupo Edson Queiroz",
@@ -75,7 +80,7 @@ export const EVENT_CONTENT = [
     id: 8,
     title: "Workshop",
     topic:
-      "Escritório de Gestão de Valor (VMO): Integrando OKR com Portfolio Lean (Disciplined Agile + Flight Level + I.A)",
+      "Tema do Workshop: Escritório de Gestão de Valor (VMO): Integrando OKR com Portfolio Lean (Disciplined Agile + Flight Level + I.A)",
     des: "Consultor Sênior de Execução de Estratégias e Head da Portfólio Formação do Grupo Portfólio. Coordena MBAs em Gerenciamento de Projetos e Business Agility do FBUNI. Certificado PMP, ACP, DASSM, DAC pelo PMI e instrutor credenciado para CAPM, PMP, DASM e DASSM, possui também certificações em Governança, Estratégia, Agilidade, Processos, Inovação e Change Management.",
     name: "Rafael Vilela",
     position: "Portfolio Formação",
@@ -86,7 +91,8 @@ export const EVENT_CONTENT = [
   {
     id: 9,
     title: "Workshop",
-    topic: "Workshop - Como superar incertezas e concluir as obras no prazo",
+    topic:
+      "Tema do Workshop: Como superar incertezas e concluir as obras no prazo",
     des: "Mestre em Engenharia de Produção pela Universidade Federal de Santa Catarina e Engenheiro Civil pela Universidade Federal do Ceará. Certificado PMP pelo PMI e em Teoria das Restrições pela ToCICO. Atua em assessoria, consultoria e capacitação, auxiliando equipes técnicas a atingir metas de prazo e custo por meio de planejamento, controle e análise de desempenho.",
     name: "Alex Amarante",
     position: "Formação Plena",
@@ -97,7 +103,7 @@ export const EVENT_CONTENT = [
     id: 10,
     title: "Workshop",
     topic:
-      "Além das Expectativas: União entre Scrum e Análise de Dados na Gestão de Projetos.",
+      "Tema do Workshop: Além das Expectativas: União entre Scrum e Análise de Dados na Gestão de Projetos.",
     des: "Líder de equipe e Scrum Master na Controladoria do Governo do Ceará, com 20 anos de experiência em desenvolvimento de software e 15 anos em gestão de projetos, incluindo 7 anos com metodologias ágeis. Fundadora do @bora.agilizar, Embaixadora do WTM do Google e Host do quadro 'Agile Gov' no podcast Agilize. Mãe do Davi e esposa do Del, é apaixonada por tecnologia!",
     name: "Silvia Muniz",
     position: "Controladoria do Governo do Ceará",
@@ -107,7 +113,7 @@ export const EVENT_CONTENT = [
   {
     id: 11,
     title: "Workshop",
-    topic: "Workshop - Autonomia, Aprendizagem e Agilidade",
+    topic: "Tema do Workshop: Autonomia, Aprendizagem e Agilidade",
     des: "Sócio da NŌVI, lidera a frente comercial e o learning sprint. Publicitário pela USP, atuou como diretor de arte em eventos corporativos no setor financeiro e varejo, product owner de Inovação no Santander, coordenador digital na Universia e especialista em Novos Produtos, Inovação e Desenvolvimento de Pessoas na Arco Educação.",
     name: "Davi Rodrigues",
     position: "Nõvi",
@@ -118,7 +124,7 @@ export const EVENT_CONTENT = [
     id: 12,
     title: "Workshop / Mesa Redonda",
     topic:
-      "Workshop - Aprendendo a Transformar seu Dia a Dia com Inteligência Artificial",
+      "Tema do Workshop: Aprendendo a Transformar seu Dia a Dia com Inteligência Artificial",
     des: "Coordenador do Unifor Hub (Hub de Inovação da Unifor); Professor da Unifor (nos curso de Gestão e Tecnologia); Cofundador da (extinta) Wave Accelerator (aceleradora de start-ups com mais de 35 startups investidas); Cofundador da Trampolim Tech (Consultoria e Educação em inovação e tecnologia). Cofundador da Intelli (inteligência de mercado powered by IA).",
     name: "Leo Lacerda",
     position: "Unifor",
@@ -128,7 +134,7 @@ export const EVENT_CONTENT = [
   {
     id: 13,
     title: "Mesa Redonda",
-    topic: "Mesa Redonda - Como Transformar o Ceará em um Hub de Inovação?",
+    topic: "Tema Mesa Redonda: Como Transformar o Ceará em um Hub de Inovação?",
     des: "Mãe da Isabella. Atuante no mercado há 20 anos, formou centenas de pessoas em atendimento ao cliente, vendas, gestão da qualidade,  gestão de processos, suporte, CX e CS. Empresária e co-fundadora da PliQ, empresa que transforma feedbacks em resultados. Eleita duas vezes Top200 estrategista mundial em Customer Success, é cientista em CX, professora, palestrante, mentora e colunista. Formada em Marketing e pós-graduada em Gestão de Processos de Negócios, já trabalhou com entidades como Apple Brasil, Grendene S/A, Unimed e governos do CE, PI e MA.",
     name: "Denise Barroso",
     position: "PliQ",
@@ -138,7 +144,7 @@ export const EVENT_CONTENT = [
   {
     id: 14,
     title: "Mesa Redonda",
-    topic: "Mesa Redonda - Como Transformar o Ceará em um Hub de Inovação?",
+    topic: "Tema Mesa Redonda: Como Transformar o Ceará em um Hub de Inovação?",
     des: "Natural de Aparecida de São Manuel (São Paulo) e Cearense de coração, João Justo é formado em Engenharia Química (USC) e possui um MBA em Transformação Digital e Futuro dos Negócios (PUC-RS), além de ser especialista em Liderança da Inovação (MIT). Com 17 anos de experiência, atua como Gerente de Inovação da Makro Engenharia, professor convidado em pós-graduações e mentor de startups, sempre focado em projetos, gestão, tecnologia e inovação.",
     name: "João Justo",
     position: "Makro",
@@ -148,7 +154,7 @@ export const EVENT_CONTENT = [
   {
     id: 15,
     title: "Mesa Redonda",
-    topic: "Mesa Redonda - Como Transformar o Ceará em um Hub de Inovação?",
+    topic: "Tema Mesa Redonda: Como Transformar o Ceará em um Hub de Inovação?",
     des: "É arquiteto, formado pela UFC e com MBA em Gestão de Projetos pela FGV. Trabalhou em empreendimentos ligados à sustentabilidade e desde 2016 atua no governo, na gestão de projetos estratégicos e prioritários, além de parcerias público-privadas. Acredita no poder da inovação para gerar valor e aproximar o cidadão do governo. Também é gerente de projetos voluntários na EDISCA (Escola de Desenvolvimento e Integração Social para Criança e Adolescente). Atualmente, Filipe exerce o cargo de Gestor de Portfólio no Íris LabGov - Laboratório de Inovação e Dados do Governo do Ceará.",
     name: "Filipe Sousa",
     position: "IRIS",
