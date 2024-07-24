@@ -68,9 +68,11 @@ const SpeakerDetails = ({ speakerId }: SpeakerDetailsProps) => {
 
         <h1 className="font-medium text-blue-gray-700">{speaker?.position}</h1>
 
-        <div className="text-justify mb-16 md:mb-0">{speaker?.des}</div>
+        <div className="text-justify text-sm md:text-base mb-16 md:mb-0">
+          {speaker?.des}
+        </div>
 
-        <div className="font-medium absolute bottom-5 mr-8">
+        <div className="font-medium text-sm md:text-base absolute bottom-2 md:bottom-5 mr-8">
           {speaker?.topic}
         </div>
       </div>
