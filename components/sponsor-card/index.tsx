@@ -23,7 +23,7 @@ const SponsorCard = ({ img, medal, text, bg }: SponsorCardProps) => {
       <p
         className={cn(
           bg,
-          "font-semibold text-sm absolute top-1 right-0 uppercase px-2 p-1 rounded-bl-2xl rounded-tr-lg w-24 text-center text-white"
+          "font-semibold text-sm absolute top-1 right-0 uppercase px-2 p-1 rounded-bl-2xl rounded-tr-lg w-24 text-center"
         )}
       >
         {medal}
