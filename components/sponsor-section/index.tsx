@@ -16,6 +16,13 @@ const sponsorList = [
     bg: "bg-[#C0C0C0]",
   },
   {
+    logo: "/logo/tecnovetti-ouro.png",
+    medal: "ouro",
+    fill: "#FFD700",
+    text: "text-[#FFD700]",
+    bg: "bg-[#FFD700]",
+  },
+  {
     logo: "/logo/unifor-ouro.png",
     medal: "ouro",
     fill: "#FFD700",
