@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="min-h-screen w-full bg-[url('/img/page/bg-image.png')] bg-cover bg-no-repeat"
+      className="h-[75vh] md:h-screen w-full bg-[url('/img/page/bg-image.png')] bg-cover bg-no-repeat"
     >
-      <div className="grid min-h-screen px-4">
+      <div className="grid h-[75vh] md:h-screen px-4">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
           <h3 className="block antialiased tracking-normal xs:text-lg sm:text-3xl leading-snug text-white mb-2">
             De 02 a 03 de agosto em Fortaleza
