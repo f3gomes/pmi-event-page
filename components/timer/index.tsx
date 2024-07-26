@@ -3,52 +3,68 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = () => {
-  const [dias, setDias] = useState(0);
-  const [horas, setHoras] = useState(0);
-  const [minutos, setMinutos] = useState(0);
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
 
-  const dataHoraObjetivo = new Date("2024-08-02T12:00:00");
+  const dateTarget = new Date("2024-08-02T12:00:00");
+
+  const zero = (count: number) => {
+    return String(count).length === 1 && 0;
+  };
 
   useEffect(() => {
-    const atualizarContagemRegressiva = () => {
-      const agora = new Date();
-      const diferencaTempo = dataHoraObjetivo.getTime() - agora.getTime();
+    const updateCounter = () => {
+      const now = new Date();
+      const timeDiff = dateTarget.getTime() - now.getTime();
 
-      const diasRestantes = Math.floor(diferencaTempo / (1000 * 60 * 60 * 24));
-      const horasRestantes = Math.floor(
-        (diferencaTempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      const daysLeft = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hoursLeft = Math.floor(
+        (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      const minutosRestantes = Math.floor(
-        (diferencaTempo % (1000 * 60 * 60)) / (1000 * 60)
+      const minutesLeft = Math.floor(
+        (timeDiff % (1000 * 60 * 60)) / (1000 * 60)
       );
 
-      setDias(diasRestantes);
-      setHoras(horasRestantes);
-      setMinutos(minutosRestantes);
+      setDays(daysLeft);
+      setHours(hoursLeft);
+      setMinutes(minutesLeft);
     };
 
-    atualizarContagemRegressiva();
-    const intervalo = setInterval(atualizarContagemRegressiva, 1000);
+    updateCounter();
+    const interval = setInterval(updateCounter, 1000);
 
-    return () => clearInterval(intervalo);
+    return () => clearInterval(interval);
     // eslint-disable-next-line
   }, []);
 
   return (
     <div>
-      {/* <h1>Contagem regressiva para 02/08/2024 - 12:00</h1> */}
-      <div className="flex gap-8">
+      <div className="flex gap-8 items-center">
         <div className="flex flex-col items-center">
-          <span className="text-2xl md:text-5xl text-center">{dias}</span>
-          <span className="text-base">DIAS</span>
+          <span className="text-2xl md:text-5xl text-center">
+            <span>{zero(days)}</span>
+            <span>{days}</span>
+          </span>
+          <span className="text-base">{days === 1 ? "DIA" : "DIAS"}</span>
         </div>
+
         <div className="flex flex-col">
-          <span className="text-2xl md:text-5xl text-center">{horas}</span>
-          <span className="text-base">HORAS</span>
+          <span className="text-2xl md:text-5xl text-center">
+            <span>{zero(hours)}</span>
+            <span>{hours}</span>
+          </span>
+          <span className="text-base">{hours === 1 ? "HORA" : "HORAS"}</span>
         </div>
+
         <div className="flex flex-col">
-          <span className="text-2xl md:text-5xl text-center">{minutos}</span>
-          <span className="text-base">MINUTOS</span>
+          <span className="text-2xl md:text-5xl text-center">
+            <span>{zero(minutes)}</span>
+            <span>{minutes}</span>
+          </span>
+          <span className="text-base">
+            {minutes === 1 ? "MINUTO" : "MINUTOS"}
+          </span>
         </div>
       </div>
     </div>
