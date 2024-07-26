@@ -78,6 +78,11 @@ const AboutEvent = () => {
             para a comunidade de gestão de projetos. Vamos juntos transformar o
             futuro da gestão!
           </p>
+
+          <div className="flex flex-col text-right">
+            <span className="font-semibold">Cristiano Oliveira</span>
+            <span>Presidente PMI Ceará</span>
+          </div>
         </div>
       </div>
     </section>

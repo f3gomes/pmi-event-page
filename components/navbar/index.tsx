@@ -5,7 +5,13 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { Collapse, IconButton, Navbar as MTNavbar } from "@material-tailwind/react";
+import {
+  Collapse,
+  IconButton,
+  Navbar as MTNavbar,
+} from "@material-tailwind/react";
+import { cn } from "@/utils/cn";
+import BuyButton from "../buy-button";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -18,10 +24,13 @@ interface NavbarProps {
   home: boolean;
 }
 
+const purchaseLink =
+  "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790";
+
 function NavItem({ children, href, open, setOpen }: NavItemProps) {
   return (
     <li
-      className="hover:text-blue-gray-500 transition duration-200 hover:scale-105"
+      className="hover:text-blue-gray-500 transition duration-200"
       onClick={() => {
         open && setOpen(false);
       }}
@@ -58,10 +67,15 @@ const NAV_MENU = [
     name: "Local",
     href: "#location",
   },
+  {
+    name: "Comprar",
+    href: purchaseLink,
+  },
 ];
 
 const Navbar = ({ home }: NavbarProps) => {
   const [open, setOpen] = useState(false);
+  const [showButton, setShowButton] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
 
   const handleOpen = () => setOpen((cur) => !cur);
@@ -88,9 +102,21 @@ const Navbar = ({ home }: NavbarProps) => {
       }
     }
 
-    window.addEventListener("scroll", handleScroll);
+    function handleScrollButton() {
+      if (window.scrollY > 500) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    }
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScrollButton);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollButton);
+    };
   }, []);
 
   return (
@@ -127,31 +153,11 @@ const Navbar = ({ home }: NavbarProps) => {
           </ul>
         </div>
 
-        {isScrolling ? (
-          <Link
-            target="_blank"
-            className="absolute hidden xl:block xl:right-6"
-            href={
-              "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
-            }
-          >
-            <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-100 focus:outline-none bg-event-200 hover:brightness-125 hover:text-gray-200 rounded-lg border border-gray-200 focus:z-10 focus:ring-4 focus:ring-gray-100 transition duration-200">
-              Comprar
-            </button>
-          </Link>
-        ) : (
-          <Link
-            target="_blank"
-            className="absolute hidden xl:block xl:right-6"
-            href={
-              "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
-            }
-          >
-            <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 transition duration-200">
-              Comprar
-            </button>
-          </Link>
-        )}
+        <BuyButton
+          home={home}
+          showButton={showButton}
+          purchaseLink={purchaseLink}
+        />
 
         <IconButton
           variant="text"
@@ -171,14 +177,24 @@ const Navbar = ({ home }: NavbarProps) => {
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, href }) => (
-              <NavItem
-                key={name}
-                open={open}
-                setOpen={setOpen}
-                href={home ? href : `/${href}`}
-              >
-                {name}
-              </NavItem>
+              <>
+                {name === "Comprar" ? (
+                  <Link target="_blank" href={purchaseLink}>
+                    <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-100 focus:outline-none bg-event-200 hover:brightness-125 hover:text-gray-200 rounded-lg border border-gray-200 focus:z-10 focus:ring-4 focus:ring-gray-100 transition duration-200">
+                      Comprar
+                    </button>
+                  </Link>
+                ) : (
+                  <NavItem
+                    key={name}
+                    open={open}
+                    setOpen={setOpen}
+                    href={home ? href : `/${href}`}
+                  >
+                    {name}
+                  </NavItem>
+                )}
+              </>
             ))}
           </ul>
         </div>
