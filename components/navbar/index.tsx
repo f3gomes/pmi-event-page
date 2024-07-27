@@ -24,7 +24,7 @@ interface NavbarProps {
   home: boolean;
 }
 
-const purchaseLink =
+export const purchaseLink =
   "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790";
 
 function NavItem({ children, href, open, setOpen }: NavItemProps) {
