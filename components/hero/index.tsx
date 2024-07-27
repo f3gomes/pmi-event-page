@@ -6,7 +6,7 @@ import { purchaseLink } from "../navbar";
 const Hero = () => {
   return (
     <div
-      id="hero"
+      id="home"
       className="h-screen w-full bg-[url('/img/page/bg-image-x.png')] md:bg-[url('/img/page/bg-image.png')] bg-cover bg-left"
     >
       <div className="grid h-screen px-4">

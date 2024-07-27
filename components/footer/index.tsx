@@ -62,32 +62,34 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <p
-            color="blue-gray"
-            className="text-center text-xs font-normal !text-gray-700"
+        <div
+          color="blue-gray"
+          className="text-center text-xs font-normal !text-gray-700"
+        >
+          &copy; {CURRENT_YEAR} Made with{" "}
+          <Link
+            href="https://nextjs.org/"
+            target="_blank"
+            className="font-bold hover:text-gray-500 transition duration-200"
           >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://nextjs.org/" target="_blank" className="font-bold">
-              Next{" "}
-            </a>
-            and{" "}
-            <a
-              href="https://www.material-tailwind.com/"
-              target="_blank"
-              className="font-bold"
-            >
-              Material Tailwind{" "}
-            </a>
-            by{" "}
-            <a
-              href="https://fgomes.vercel.app/"
-              target="_blank"
-              className="font-bold"
-            >
-              Felipe Gomes
-            </a>
-          </p>
+            Next{" "}
+          </Link>
+          and{" "}
+          <Link
+            href="https://www.material-tailwind.com/"
+            target="_blank"
+            className="font-bold hover:text-gray-500 transition duration-200"
+          >
+            Material Tailwind{" "}
+          </Link>
+          by{" "}
+          <Link
+            href="https://fgomes.vercel.app/"
+            target="_blank"
+            className="font-bold hover:text-gray-500 transition duration-200"
+          >
+            Felipe Gomes
+          </Link>
         </div>
       </div>
     </footer>
