@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Collapse, IconButton, Navbar as MTNavbar } from "@material-tailwind/react";
+
 import BuyButton from "../buy-button";
 
 interface NavItemProps {
@@ -99,6 +100,7 @@ const Navbar = ({ home }: NavbarProps) => {
   const [open, setOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [logoImage, setLogoImage] = useState("/logo/logo-white.png");
 
   const handleOpen = () => setOpen((cur) => !cur);
 
@@ -119,8 +121,10 @@ const Navbar = ({ home }: NavbarProps) => {
     function handleScroll() {
       if (window.scrollY > 0) {
         setIsScrolling(true);
+        setLogoImage("/logo/logo.png");
       } else {
         setIsScrolling(false);
+        setLogoImage("/logo/logo-white.png");
       }
     }
 
@@ -155,9 +159,9 @@ const Navbar = ({ home }: NavbarProps) => {
             priority
             width={0}
             height={0}
-            sizes="100vw"
-            src={"/logo/logo.png"}
             alt="logo"
+            sizes="100vw"
+            src={logoImage}
             className="cursor-pointer w-auto h-20"
           />
         </Link>
