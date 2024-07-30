@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { purchaseLink } from "../navbar";
 
 const CURRENT_YEAR = new Date().getFullYear();
 const iconClass = "hover:scale-125 transition duration-200";
@@ -33,14 +34,10 @@ const Footer = () => {
         <div className="flex w-fit gap-3 flex-col md:flex-row">
           <Link
             target="_blank"
-            className="w-fit"
-            href={
-              "https://www.sympla.com.br/evento/14-congresso-regional-de-gestao-projetos-e-lideranca-pmice/2441790"
-            }
+            className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 flex justify-center items-center"
+            href={purchaseLink}
           >
-            <button className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
-              Comprar
-            </button>
+            Comprar
           </Link>
         </div>
       </div>
