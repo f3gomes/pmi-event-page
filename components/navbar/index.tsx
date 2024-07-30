@@ -5,12 +5,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import {
-  Collapse,
-  IconButton,
-  Navbar as MTNavbar,
-} from "@material-tailwind/react";
-import { cn } from "@/utils/cn";
+import { Collapse, IconButton, Navbar as MTNavbar } from "@material-tailwind/react";
 import BuyButton from "../buy-button";
 
 interface NavItemProps {
@@ -45,7 +40,7 @@ function NavItem({ children, href, open, setOpen }: NavItemProps) {
 const NAV_MENU = [
   {
     name: "Início",
-    href: "#",
+    href: "#home",
   },
   {
     name: "Sobre",
@@ -72,7 +67,7 @@ const NAV_MENU = [
 const NAV_MENU_MOBILE = [
   {
     name: "Início",
-    href: "#",
+    href: "#home",
   },
   {
     name: "Sobre",

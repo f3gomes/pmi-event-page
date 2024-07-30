@@ -79,7 +79,7 @@ const AboutEvent = () => {
             futuro da gestão!
           </p>
 
-          <div className="flex flex-col text-right">
+          <div className="flex flex-col md:text-right mt-8">
             <span className="font-semibold">Cristiano Oliveira</span>
             <span>Presidente PMI Ceará</span>
           </div>

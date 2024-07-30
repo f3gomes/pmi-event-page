@@ -111,16 +111,6 @@ export const EVENT_CONTENT = [
     linkedin: "https://www.linkedin.com/in/silvia-muniz-8b2390a3/",
   },
   {
-    id: 11,
-    title: "Workshop",
-    topic: "Tema do Workshop: Autonomia, Aprendizagem e Agilidade",
-    des: "Sócio da NŌVI, lidera a frente comercial e o learning sprint. Publicitário pela USP, atuou como diretor de arte em eventos corporativos no setor financeiro e varejo, product owner de Inovação no Santander, coordenador digital na Universia e especialista em Novos Produtos, Inovação e Desenvolvimento de Pessoas na Arco Educação.",
-    name: "Davi Rodrigues",
-    position: "Nõvi",
-    img: "/img/speakers/davi.jpeg",
-    linkedin: "https://www.linkedin.com/in/davixrodrigues/",
-  },
-  {
     id: 12,
     title: "Workshop / Mesa Redonda",
     topic:
