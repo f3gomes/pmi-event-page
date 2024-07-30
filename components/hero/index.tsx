@@ -25,11 +25,13 @@ const Hero = () => {
             Fortaleza
           </h3>
 
-          <div className="flex items-center gap-4">
-            <Link className="w-full h-full" target="_blank" href={purchaseLink}>
-              <button className="md:w-48 md:h-16 py-2.5 px-5 me-2 mb-2 text-base sm:text-lg font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
-                Ingressar
-              </button>
+          <div className="flex items-center justify-center gap-4">
+            <Link
+              target="_blank"
+              href={purchaseLink}
+              className="md:w-48 md:h-16 py-2.5 px-5 me-2 mb-2 text-sm md:text-lg font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-700 focus:z-10 focus:ring-4 focus:ring-gray-100 flex justify-center items-center"
+            >
+              Ingressar
             </Link>
           </div>
         </div>

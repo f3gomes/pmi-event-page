@@ -112,6 +112,7 @@ const Navbar = ({ home }: NavbarProps) => {
 
     if (!home) {
       setIsScrolling(true);
+      setLogoImage("/logo/logo.png");
     }
 
     // eslint-disable-next-line
@@ -121,10 +122,15 @@ const Navbar = ({ home }: NavbarProps) => {
     function handleScroll() {
       if (window.scrollY > 0) {
         setIsScrolling(true);
-        setLogoImage("/logo/logo.png");
+
+        if (home) {
+          setLogoImage("/logo/logo.png");
+        }
       } else {
         setIsScrolling(false);
-        setLogoImage("/logo/logo-white.png");
+        if (home) {
+          setLogoImage("/logo/logo-white.png");
+        }
       }
     }
 
