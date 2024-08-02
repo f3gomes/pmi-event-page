@@ -38,6 +38,10 @@ const Timer = () => {
     // eslint-disable-next-line
   }, []);
 
+  if (new Date() > dateTarget) {
+    return <div className="text-2xl md:text-5xl text-center">00 : 00 : 00</div>;
+  }
+
   return (
     <div>
       <div className="flex gap-8 items-center">
