@@ -149,6 +149,8 @@ const Navbar = ({ home }: NavbarProps) => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("scroll", handleScrollButton);
     };
+
+    // eslint-disable-next-line
   }, []);
 
   return (
